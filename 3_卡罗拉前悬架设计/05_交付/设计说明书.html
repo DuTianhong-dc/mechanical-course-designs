@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>设计说明书 · 卡罗拉前悬架设计</title>
+<style>
+body { font-family: system-ui, 'Microsoft YaHei', sans-serif; max-width: 920px; margin: 40px auto; padding: 0 24px; line-height: 1.75; color: #222; }
+h1 { border-bottom: 3px solid #333; padding-bottom: 10px; font-size: 1.7em; }
+h2 { border-bottom: 1px solid #bbb; padding-bottom: 6px; margin-top: 2.2em; }
+h3 { margin-top: 1.8em; }
+table { border-collapse: collapse; margin: 18px 0; width: 100%; }
+th, td { border: 1px solid #bbb; padding: 6px 12px; text-align: left; }
+th { background: #eee; }
+code { background: #f2f2f2; padding: 2px 6px; border-radius: 3px; }
+pre { background: #f4f4f4; padding: 14px; border-radius: 6px; overflow-x: auto; }
+pre code { padding: 0; background: none; }
+a { color: #1a5276; }
+blockquote { border-left: 4px solid #bbb; margin: 14px 0; padding: 4px 16px; color: #555; background: #f8f8f8; }
+</style>
+</head>
+<body>
+<h1>汽车零部件数字化设计 · 课程设计说明书</h1>
+<h2>卡罗拉（E210）前悬架设计</h2>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>题目</strong></td>
+<td>卡罗拉汽车前悬架设计</td>
+</tr>
+
+
+
+
+</tbody>
+</table>
+</blockquote>
+<hr />
+<h2>目录</h2>
+<ul>
+<li><a href="#1-绪论">1 绪论</a></li>
+<li><a href="#2-设计目标与载荷计算">2 设计目标与载荷计算</a></li>
+<li><a href="#3-悬架刚度与杠杆比">3 悬架刚度与杠杆比</a></li>
+<li><a href="#4-导向机构几何设计">4 导向机构几何设计</a></li>
+<li><a href="#5-螺旋弹簧设计">5 螺旋弹簧设计</a></li>
+<li><a href="#6-减振器设计">6 减振器设计</a></li>
+<li><a href="#7-减振器壳筒身设计">7 减振器壳（筒身）设计</a></li>
+<li><a href="#8-下摆臂结构设计">8 下摆臂结构设计</a></li>
+<li><a href="#9-强度校核汇总">9 强度校核汇总</a></li>
+<li><a href="#10-结论">10 结论</a></li>
+<li><a href="#附录-a-参数文件清单">附录 A 参数文件清单</a></li>
+<li><a href="#附录-b-设计文件索引">附录 B 设计文件索引</a></li>
+</ul>
+<hr />
+<h1>1 绪论</h1>
+<h2>1.1 设计任务</h2>
+<p>依据课程设计任务书，完成卡罗拉汽车前悬架的设计，交付物包括：</p>
+<ol>
+<li><strong>前悬架装配图</strong>（1 张）</li>
+<li><strong>减振器壳零件图</strong>（1 张）</li>
+<li><strong>下摆臂零件图</strong>（1 张）</li>
+<li><strong>设计说明书</strong>（本文件）</li>
+</ol>
+<h2>1.2 车型确认</h2>
+<p>任务书给出的整车参数（85 kW / 185 N·m / 2700 mm 轴距 / 180 km/h / 1770 kg / 195/65 R15）与<strong>一汽丰田卡罗拉 1.2T（第 12 代，E210，TNGA-C 平台）</strong>配置完全对应，设计以 E210 为原型开展。</p>
+<blockquote>
+<p>详细调研见 <a href="../00_调研/卡罗拉前悬架调研报告.md"><code>00_调研/卡罗拉前悬架调研报告.md</code></a>。</p>
+</blockquote>
+<h2>1.3 悬架方案</h2>
+<p>卡罗拉前悬架为<strong>麦弗逊式（MacPherson）独立悬架</strong>——紧凑型轿车前悬最主流的形式。基本组成为螺旋弹簧 + 减振器支柱 + 下摆臂 + 横向稳定杆，配副车架、转向节。</p>
+<p><strong>麦弗逊的核心特征</strong>：减振器兼作滑动主销；侧向力大部分由下摆臂承受；弹簧缓冲、减振器衰减振动。优点是结构紧凑、非簧载质量小、成本低；缺点是抗侧倾能力弱（需稳定杆弥补）、滑柱受侧向力大——本设计通过偏频选择与几何布置（侧倾中心高度、主销倾角）予以控制。</p>
+<h2>1.4 设计方法</h2>
+<p>采用<strong>正向设计流程</strong>：</p>
+<pre><code>设计目标（偏频/挠度） → 载荷计算 → 刚度与杠杆比 → 导向机构几何
+  → 零件设计（弹簧/减振器/壳体/摆臂） → 强度校核 → 建模出图
+</code></pre>
+<p>全部参数收录于参数文件（见<a href="#附录-a-参数文件清单">附录 A</a>）；承力零件的几何由参数文件驱动、在 SolidWorks 中按链接的方程式 txt 建立与重建。</p>
+<hr />
+<h1>2 设计目标与载荷计算</h1>
+<blockquote>
+<p>源自 <a href="../01_设计计算/01_载荷与设计目标.md"><code>01_设计计算/01_载荷与设计目标.md</code></a>
+全局参数：<a href="../02_参数/00_全局.toml"><code>02_参数/00_全局.toml</code></a></p>
+</blockquote>
+<h2>2.1 设计输入</h2>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>符号</th>
+<th>数值</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>满载总质量</td>
+<td>m</td>
+<td>1770 kg</td>
+<td>课程设计任务书</td>
+</tr>
+<tr>
+<td>轴距</td>
+<td>L</td>
+<td>2700 mm</td>
+<td>课程设计任务书</td>
+</tr>
+<tr>
+<td>前轮距</td>
+<td>B₁</td>
+<td>1527 mm</td>
+<td>公开车型数据（E210）</td>
+</tr>
+<tr>
+<td>最高车速</td>
+<td>v_max</td>
+<td>180 km/h</td>
+<td>课程设计任务书</td>
+</tr>
+<tr>
+<td>驱动形式</td>
+<td>—</td>
+<td>前置前驱（FF）</td>
+<td>车型资料</td>
+</tr>
+</tbody>
+</table>
+<h2>2.2 轴荷分配与轮荷</h2>
+<p>满载工况前轴荷分配按 <strong>60 %</strong>（FF 紧凑型轿车典型值）：</p>
+<pre><code>G₁ = m · g · 60% = 1770 × 9.8 × 0.60 = 10 407.6 N ≈ 10.41 kN
+F_z = G₁ / 2 = 5203.8 N ≈ 5.20 kN   （单侧前轮，折合 531 kg）
+</code></pre>
+<h2>2.3 簧载质量</h2>
+<p>单侧非簧载质量（车轮总成、转向节、轮毂、制动器、摆臂外侧段）取工程假设 <strong>m_u ≈ 60 kg</strong>：</p>
+<pre><code>m_s = 531 − 60 = 471 kg    （单侧簧载质量）
+</code></pre>
+<h2>2.4 平顺性目标：偏频与静挠度</h2>
+<p>设计目标偏频（前悬架、满载）取 <strong>n = 1.25 Hz</strong>（轿车前悬常规 1.2～1.4 Hz，舒适取向）。静挠度（教材近似式 n = 5/√f_c）：</p>
+<pre><code>f_c = 25 / n² = 16.0 cm = 160 mm
+</code></pre>
+<blockquote>
+<p>校核：精确式 n = (1/2π)·√(g/f_c) 反算 f_c ≈ 159 mm，一致 ✓</p>
+</blockquote>
+<h2>2.5 悬架刚度（轮心等效）</h2>
+<pre><code>C = m_s·g / f_c = 471 × 9.8 / 0.160 = 28 849 N/m ≈ 28.8 N/mm
+</code></pre>
+<h2>2.6 本章结论</h2>
+<table>
+<thead>
+<tr>
+<th>量</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>满载单侧前轮载荷 F_z</td>
+<td><strong>5.20 kN</strong></td>
+</tr>
+<tr>
+<td>单侧簧载质量 m_s</td>
+<td><strong>471 kg</strong></td>
+</tr>
+<tr>
+<td>目标偏频 n</td>
+<td><strong>1.25 Hz</strong></td>
+</tr>
+<tr>
+<td>静挠度 f_c</td>
+<td><strong>160 mm</strong></td>
+</tr>
+<tr>
+<td>轮心处悬架刚度 C</td>
+<td><strong>28.8 N/mm</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>3 悬架刚度与杠杆比</h1>
+<blockquote>
+<p>源自 <a href="../01_设计计算/02_杠杆比与弹簧刚度.md"><code>01_设计计算/02_杠杆比与弹簧刚度.md</code></a></p>
+</blockquote>
+<h2>3.1 杠杆比的定义</h2>
+<p>麦弗逊悬架的螺旋弹簧经"减振器支柱 + 下摆臂"机构传力，弹簧变形与轮心位移之间存在<strong>杠杆比（运动比）i</strong>：</p>
+<pre><code>i = 弹簧轴向变形量 / 轮心垂直位移量        （i &lt; 1，典型 0.85～0.97）
+</code></pre>
+<p>由能量法，轮心刚度与弹簧刚度关系：</p>
+<pre><code>C = k · i²      即    k = C / i²
+</code></pre>
+<p>弹簧静载力（虚功原理）：<code>F_spring = F_w / i</code></p>
+<h2>3.2 杠杆比取值</h2>
+<p>近似式 i ≈ a/b（a 为弹簧盘中心线至摆动轴线的垂直距离，b 为轮心至摆动轴线的垂直距离）。</p>
+<p>本阶段取 <strong>i = 0.93</strong>（麦弗逊常规 0.85～0.97 的中上值）。</p>
+<blockquote>
+<p>⚠️ 设计初期假定值——第 4 章硬点布置完成后复核：弹簧盘位置距底端 148～154 mm，a/b 复核与 0.93 假定基本一致（详见 4.3 节与第 5 章弹簧装配链）。
+→ 该假定后被第 7 章的<strong>缓冲块介入点</strong>判据修正为 <strong>191 mm</strong>（见 7.2 节）。</p>
+</blockquote>
+<h2>3.3 螺旋弹簧刚度</h2>
+<pre><code>k = C / i² = 28 849 / 0.93² = 33 355 N/m ≈ 33.4 N/mm
+</code></pre>
+<h2>3.4 弹簧静载力与静压缩量</h2>
+<pre><code>F_s = m_s·g / i = 4615.8 / 0.93 = 4963 N ≈ 4.96 kN
+δ_s = F_s / k = 4963 / 33.4 = 148.6 mm
+</code></pre>
+<p>交叉校核：δ_s = f_c × i = 160 × 0.93 = 148.8 mm ✓ 自洽。</p>
+<h2>3.5 本章结论</h2>
+<table>
+<thead>
+<tr>
+<th>量</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>杠杆比 i</td>
+<td><strong>0.93</strong></td>
+</tr>
+<tr>
+<td>螺旋弹簧刚度 k</td>
+<td><strong>33.4 N/mm</strong></td>
+</tr>
+<tr>
+<td>弹簧满载静载力 F_s</td>
+<td><strong>4.96 kN</strong></td>
+</tr>
+<tr>
+<td>弹簧静压缩量 δ_s</td>
+<td><strong>148.8 mm</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>4 导向机构几何设计</h1>
+<blockquote>
+<p>源自 <a href="../01_设计计算/05_导向机构几何设计.md"><code>01_设计计算/05_导向机构几何设计.md</code></a></p>
+</blockquote>
+<h2>4.1 坐标系与布置基准</h2>
+<p>横断面坐标系（车辆前视）：原点为车辆中线与地面交点，Y 横向向外，Z 高度向上。基准：半轮距 B/2 = 763.5 mm，车轮滚动半径 317 mm。</p>
+<h2>4.2 关键硬点坐标</h2>
+<table>
+<thead>
+<tr>
+<th>硬点</th>
+<th>符号</th>
+<th>X (mm)</th>
+<th>Y (mm)</th>
+<th>Z (mm)</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>下摆臂内铰点（摆动轴线中心）</td>
+<td>A</td>
+<td><strong>+24.9</strong></td>
+<td><strong>369.3</strong></td>
+<td><strong>204</strong></td>
+<td>副车架上</td>
+</tr>
+<tr>
+<td>下摆臂外端（下球头中心）</td>
+<td>B</td>
+<td><strong>+24.9</strong></td>
+<td><strong>689.3</strong></td>
+<td>207</td>
+<td>轮辋内侧、轮心下方（主销轴线上）</td>
+</tr>
+<tr>
+<td>支柱下端（转向节夹持中心）</td>
+<td>S</td>
+<td><strong>+24.2</strong></td>
+<td><strong>686.4</strong></td>
+<td>220</td>
+<td>与球头邻近（主销轴线上）</td>
+</tr>
+<tr>
+<td>支柱上支点（顶胶中心）</td>
+<td>P</td>
+<td><strong>−16.3</strong></td>
+<td><strong>523.5</strong></td>
+<td>950</td>
+<td>车身上（主销轴线上）</td>
+</tr>
+<tr>
+<td>轮心（基准）</td>
+<td>W</td>
+<td><strong>0</strong></td>
+<td>763.5</td>
+<td>317</td>
+<td></td>
+</tr>
+<tr>
+<td>轮胎接地点</td>
+<td>G</td>
+<td><strong>0</strong></td>
+<td>763.5</td>
+<td>0</td>
+<td>轮心正下方</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>X 轴基准</strong>：取轮心 X = 0，主销轴线在 XZ 投影内距轮心 <strong>18.8 mm</strong>（垂直距，轴线位于轮心前方；与 70_转向节.toml 模型值一致）。
+轴线方程 <code>X(Z) = +18.8 − 0.055383×(Z − 317)</code>。</p>
+<p><strong>表内 A/B/S/P 四点是反推得到的</strong>：以自定参数（下摆臂横向跨度 <strong>320</strong>、
+侧倾中心 <strong>35</strong>）为约束反解，官方定位倾角仅作校核。
+A 的 Y 由「B − 320」定，A 的 Z 由「侧倾中心 = 35」反解。</p>
+</blockquote>
+<p><strong>下摆臂长度（水平投影）</strong>：L_A = 689.3 − 369.3 = <strong>320 mm</strong>。内端低（204）、外端高（207），上翘 <strong>0.54°</strong>。</p>
+<h2>4.3 主销轴线与倾角校核</h2>
+<p>主销轴线 = 支柱上支点 P 与下端 S 的连线，<strong>与丰田官方定位参数一致</strong>：</p>
+<pre><code>主销轴线方程（横向）：Y = 735.5 − 0.2232·Z   （地面交点 Y = 763.5 − 28 = 735.5）
+主销内倾角 α = atan[(686.4−523.5) / (950−220)] = 12.58°   （官方 12°35′ ✓）
+主销后倾角 β = 3.17°                                       （官方 3°10′ ✓）
+主销与铅垂线的真夹角（三维）= 12.95°                       ← 装配实际角度
+主销偏移距 = 763.5 − 735.5 = 28 mm                         （官方反推 25~30 ✓）
+主销后倾拖距 = +36.4 mm                                    （正当值，自动回正）
+轮心至轴线距离 = 98.4 mm（转向节悬臂长度）
+                     ├ 在【主销轴线+铅垂线】竖直平面内 = 89.1 mm
+                     └ 垂直于该平面                     = 41.7 mm
+
+★ 以【轴承座中间面】为基点（= 轮心内侧 22 mm，即 Y = 741.5）：
+     至轴线距离 = 77.4 mm（面内 68.2 ｜ 面外 36.4）
+     轴承座中间面到轮心的距离 D = 30 + 32 − 40 = 22 mm
+       ① 轮心→轮辋安装面 ET = 40（6.5J×15 ET40，原厂轮辋）
+       ② 轮辋安装面→转向节孔外端面 = 30（估）
+       ③ 孔外端面→孔中间面 = 64/2 = 32（轴承座孔深 64）
+</code></pre>
+<blockquote>
+<p><strong>三个角的区分</strong>：主销内倾 12.58° 在<strong>前视</strong>（YZ）量、主销后倾 3.17° 在<strong>侧视</strong>（XZ）量，
+而<strong>实际装配中主销轴线与铅垂线的真夹角为 12.95°</strong>（= 两倾角的三维叠加，
+恒大于任一投影角）。</p>
+</blockquote>
+<h2>4.4 侧倾中心高度</h2>
+<p>瞬心 IC 作图：下摆臂线 AB（斜率 0.009375）与过 P 垂直于支柱轴线的直线（斜率 +0.2232）交于 <strong>IC = (−2959, 173)</strong>；接地点 G 与 IC 连线（斜率 −0.046414）交车辆中线：</p>
+<pre><code>h_rc = 0.046414 × 763.5 ≈ 35.4 mm   （常规 0~100 mm ✓，偏低设定）
+</code></pre>
+<h2>4.5 运动校核</h2>
+<p>摆臂总摆角（压缩 70 + 复原 90 mm）：θ = asin(160/320) ≈ 30.0°；轮距变化全行程约 15～20 mm，属紧凑型轿车常规水平。</p>
+<h2>4.6 本章结论</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>下摆臂长度（水平投影）</td>
+<td><strong>320 mm</strong></td>
+</tr>
+<tr>
+<td>主销内倾 / 后倾</td>
+<td><strong>12.58° / 3.17°</strong>（与官方一致）</td>
+</tr>
+<tr>
+<td>侧倾中心高度</td>
+<td><strong>35 mm</strong></td>
+</tr>
+<tr>
+<td>摆臂上翘</td>
+<td><strong>0.54°</strong></td>
+</tr>
+<tr>
+<td>摆臂摆角（全行程）</td>
+<td>≈ 30.0°</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>5 螺旋弹簧设计</h1>
+<blockquote>
+<p>源自 <a href="../01_设计计算/03_螺旋弹簧设计.md"><code>01_设计计算/03_螺旋弹簧设计.md</code></a></p>
+<p><strong>📎 本章零件参数文件（单一参数源，点击跳转）</strong>：
+<strong><a href="../02_参数/10_螺旋弹簧.toml">02_参数/10_螺旋弹簧.toml</a></strong></p>
+</blockquote>
+<h2>5.1 设计输入</h2>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>数值</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>弹簧刚度 k</td>
+<td>33.4 N/mm</td>
+<td>第 3 章</td>
+</tr>
+<tr>
+<td>满载静载力 F_s</td>
+<td>4.96 kN</td>
+<td>第 3 章</td>
+</tr>
+<tr>
+<td>静压缩量 δ_s</td>
+<td>≈ 149 mm</td>
+<td>第 3 章</td>
+</tr>
+</tbody>
+</table>
+<h2>5.2 材料与许用应力</h2>
+<p>材料选 <strong>60Si2MnA</strong>（弹簧钢，GB/T 1222），弹性模量 G = 79 000 MPa，抗拉强度 ≥1650 MPa。</p>
+<pre><code>许用切应力 [τ] = 0.46σ_b = 760 MPa
+极限切应力 [τ]_max = 0.65σ_b = 1070 MPa
+</code></pre>
+<h2>5.3 簧丝直径</h2>
+<p>按许用切应力与曲度系数迭代：</p>
+<pre><code>d ≥ 1.6·√(F_max·K·c / [τ])
+初取 c = D/d ≈ 8.7，K = 1.156
+→ d = 13.5 mm（弹簧钢丝标准系列）
+</code></pre>
+<h2>5.4 中径与圈数</h2>
+<pre><code>D = c·d = 8.7 × 13.5 ≈ 118 mm
+弹簧刚度要求 k = Gd⁴/(8D³n) → n = 6 圈（有效圈）
+总圈数 n₁ = n + 2 = 8（两端各并紧 1 圈，磨平）
+</code></pre>
+<h2>5.5 自由高度与节距</h2>
+<pre><code>自由高 H₀ = 静压缩量 + 剩余高度 + 并紧段 … = 330 mm
+有效段节距 p = (H₀ − 1.5d)/n = 51.625 mm
+</code></pre>
+<h2>5.6 端部结构与磨平</h2>
+<p>两端<strong>并紧磨平</strong>（GB/T 1239.1 YI 型）：</p>
+<ul>
+<li>磨平部分 ≥ 3/4 圈（磨面角 270°）</li>
+<li>端头厚度 ≈ 0.25d = 3.375 mm</li>
+<li>支承圈与有效圈并紧</li>
+</ul>
+<h2>5.7 强度校核</h2>
+<pre><code>静载：τ = 8F_s·D·K/(πd³) = 701 MPa ≤ 760 MPa ✓（n=1.90）
+极限：τ_max = 919 MPa ≤ 1070 MPa ✓（n=2.30）
+</code></pre>
+<h2>5.8 本章结论</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>簧丝直径</td>
+<td><strong>φ13.5</strong></td>
+</tr>
+<tr>
+<td>中径</td>
+<td><strong>φ118</strong></td>
+</tr>
+<tr>
+<td>自由高度</td>
+<td><strong>330 mm</strong></td>
+</tr>
+<tr>
+<td>有效圈 / 总圈</td>
+<td>6 / 8</td>
+</tr>
+<tr>
+<td>节距（有效段）</td>
+<td>51.625 mm</td>
+</tr>
+<tr>
+<td>材料 / 旋向</td>
+<td>60Si2MnA / 右旋</td>
+</tr>
+<tr>
+<td>静载 / 极限切应力</td>
+<td>701 / 919 MPa（均合格）</td>
+</tr>
+<tr>
+<td>单件质量</td>
+<td>≈ 3.36 kg</td>
+</tr>
+</tbody>
+</table>
+<h2>5.9 参数文件与参数总表</h2>
+<p>本章全部参数收录于参数文件（电子版可点击跳转）：<a href="../02_参数/10_螺旋弹簧.toml">02_参数/10_螺旋弹簧.toml</a></p>
+<p><strong>参数总表</strong>（「独立」为设计决策输入，「派生」由独立参数算出）：</p>
+<table>
+<thead>
+<tr>
+<th>分区</th>
+<th>参数</th>
+<th>值</th>
+<th>单位</th>
+<th>属性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>几何</td>
+<td>中径 D</td>
+<td>118.0</td>
+<td>mm</td>
+<td>独立</td>
+</tr>
+<tr>
+<td>几何</td>
+<td>线径 d</td>
+<td>13.5</td>
+<td>mm</td>
+<td>独立</td>
+</tr>
+<tr>
+<td>几何</td>
+<td>自由高 H₀</td>
+<td>330.0</td>
+<td>mm</td>
+<td>独立</td>
+</tr>
+<tr>
+<td>几何</td>
+<td>有效圈数 n</td>
+<td>6.0</td>
+<td>—</td>
+<td>独立</td>
+</tr>
+<tr>
+<td>几何</td>
+<td>每端并紧圈数</td>
+<td>1.0</td>
+<td>—</td>
+<td>独立</td>
+</tr>
+<tr>
+<td>几何</td>
+<td>磨平切入系数</td>
+<td>0.25</td>
+<td>×d</td>
+<td>独立</td>
+</tr>
+<tr>
+<td>几何</td>
+<td>磨平覆盖圈数</td>
+<td>0.75</td>
+<td>圈</td>
+<td>独立</td>
+</tr>
+<tr>
+<td>几何</td>
+<td>旋绕比 c</td>
+<td>8.741</td>
+<td>—</td>
+<td>派生 D/d</td>
+</tr>
+<tr>
+<td>几何</td>
+<td>有效段节距 p</td>
+<td>51.625</td>
+<td>mm</td>
+<td>派生 (H₀−1.5d)/n</td>
+</tr>
+<tr>
+<td>几何</td>
+<td>总圈数 n₁</td>
+<td>8.0</td>
+<td>—</td>
+<td>派生 n+2</td>
+</tr>
+<tr>
+<td>几何</td>
+<td>曲线跨度</td>
+<td>336.75</td>
+<td>mm</td>
+<td>派生 H₀+0.5d</td>
+</tr>
+<tr>
+<td>几何</td>
+<td>端面切入量</td>
+<td>3.375</td>
+<td>mm</td>
+<td>派生 0.25d</td>
+</tr>
+<tr>
+<td>几何</td>
+<td>压并高度</td>
+<td>101.25</td>
+<td>mm</td>
+<td>派生 (n₁−0.5)d</td>
+</tr>
+<tr>
+<td>校核</td>
+<td>曲度系数 K</td>
+<td>1.156</td>
+<td>—</td>
+<td>派生</td>
+</tr>
+<tr>
+<td>校核</td>
+<td>弹簧刚度 k</td>
+<td>33.26</td>
+<td>N/mm</td>
+<td>派生 Gd⁴/(8D³n)</td>
+</tr>
+<tr>
+<td>校核</td>
+<td>静载切应力</td>
+<td>701</td>
+<td>MPa</td>
+<td>≤760 ✓</td>
+</tr>
+<tr>
+<td>校核</td>
+<td>极限切应力</td>
+<td>919</td>
+<td>MPa</td>
+<td>≤1070 ✓</td>
+</tr>
+<tr>
+<td>校核</td>
+<td>展开长度</td>
+<td>2987.6</td>
+<td>mm</td>
+<td>算料用</td>
+</tr>
+<tr>
+<td>零件</td>
+<td>单件质量</td>
+<td>3.36</td>
+<td>kg</td>
+<td>派生</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>6 减振器设计</h1>
+<blockquote>
+<p>源自 <a href="../01_设计计算/04_减振器设计.md"><code>01_设计计算/04_减振器设计.md</code></a></p>
+</blockquote>
+<h2>6.1 阻尼比与阻尼系数</h2>
+<p>相对阻尼系数：复原 ψ_y = 0.40、压缩 ψ_s = 0.20（≈ ψ_y/2，平均 0.30）。</p>
+<p>临界阻尼基准（轮心处）√(C·m_s) = 3686 N·s/m：</p>
+<pre><code>轮心：c_wy = 2949 N·s/m（复原）；c_ws = 1474 N·s/m（压缩）
+减振器处（÷i²）：c_dy = 3410 N·s/m；c_ds = 1704 N·s/m
+</code></pre>
+<h2>6.2 卸荷力</h2>
+<p>示功试验最大活塞速度 0.52 m/s：</p>
+<pre><code>复原卸荷力 1773 N ≈ 1.77 kN；压缩卸荷力 886 N ≈ 0.89 kN
+</code></pre>
+<h2>6.3 主要尺寸</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>计算</th>
+<th>取值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>工作缸直径</td>
+<td>A = F_y/P_max（P_max=2.5MPa）→ D_c = 30.0</td>
+<td><strong>φ30</strong></td>
+</tr>
+<tr>
+<td>活塞杆直径</td>
+<td>d_g = (0.4~0.5)D_c 取上限</td>
+<td><strong>φ15</strong></td>
+</tr>
+<tr>
+<td>贮油缸外径</td>
+<td>内径 φ42 + 壁 2 →</td>
+<td><strong>φ46 × 壁厚 2</strong></td>
+</tr>
+<tr>
+<td>行程</td>
+<td>(70+90)/0.93 圆整</td>
+<td><strong>175 mm</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>6.4 本章结论</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>形式</td>
+<td>双筒式、油压+充气</td>
+</tr>
+<tr>
+<td>工作缸 / 活塞杆</td>
+<td>φ30 / φ15</td>
+</tr>
+<tr>
+<td>贮油缸（外筒）</td>
+<td><strong>φ46 × 壁厚 2</strong></td>
+</tr>
+<tr>
+<td>行程</td>
+<td>175 mm</td>
+</tr>
+<tr>
+<td>复原 / 压缩阻尼系数</td>
+<td>3.41 / 1.70 N·s/mm</td>
+</tr>
+</tbody>
+</table>
+<p><strong>衔接</strong>：外筒 φ46 与行程 175 → 第 7 章减振器壳尺寸；活塞杆 φ15 上端 M14×1.5 接顶胶。</p>
+<hr />
+<h1>7 减振器壳（筒身）设计</h1>
+<blockquote>
+<p>源自 <a href="../01_设计计算/07_减振器壳筒身尺寸.md"><code>01_设计计算/07_减振器壳筒身尺寸.md</code></a></p>
+<p><strong>📎 本章零件参数文件（单一参数源，点击跳转）</strong>：
+<strong><a href="../02_参数/30_减振器壳.toml">02_参数/30_减振器壳.toml</a></strong></p>
+</blockquote>
+<h2>7.1 零件定义</h2>
+<p>减振器壳为双筒式减振器的外部壳体件（焊接组件），由<strong>筒体 + 底盖 + 弹簧盘 + 下支架</strong>焊接构成。内部工作缸、活塞杆、油封等不在本件范围。</p>
+<h2>7.2 尺寸推导链</h2>
+<p><strong>筒体长度</strong>（内腔功能段叠加）：</p>
+<table>
+<thead>
+<tr>
+<th>段</th>
+<th>长度</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>底部段</td>
+<td>25</td>
+<td>底阀 + 缓冲空间</td>
+</tr>
+<tr>
+<td>活塞行程</td>
+<td>175</td>
+<td>第 6 章</td>
+</tr>
+<tr>
+<td>顶部段</td>
+<td>100</td>
+<td>导向器 + 油封 + 防尘罩</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>300</strong></td>
+<td>筒体总长</td>
+</tr>
+</tbody>
+</table>
+<p><strong>弹簧盘位置</strong>（按"缓冲块恰好在弹簧弹性段走完时介入"反推）：</p>
+<pre><code>弹簧弹性段压缩量 50 × 0.93 = 46.5 ｜ 缓冲块自由高 30 ｜ 上座阶梯孔下段深 4
+→ 台阶面到筒口需 = 46.5 + 30 = 76.5   →   上座面到筒口 = 76.5 − 4 = 72.5
+→ 上弹簧座面 = 300 + 72.5 = 372.5
+弹簧满载装配长度 181.2 → 弹簧盘（下座）位置 = 372.5 − 181.2 = 191.3 ≈ 191 mm（距底端）
+</code></pre>
+<blockquote>
+<p>⚠️ <strong>本节  已修正</strong>：原按"上座面高出筒口 35"反推得 154，但那个 35 没有出处，
+会使缓冲块在轮心才 9.9 就顶到筒口，比第 3 章要求的"弹性段 50"整整早了 37.3 mm。
+现按第 3 章「弹性段 50 / 缓冲块 20」重新反推。
+<strong>减振器壳模型需相应把弹簧盘沿轴向【上移 37 mm】（154 → 191）。</strong></p>
+</blockquote>
+<p><strong>弹簧盘直径</strong>：弹簧内径 104.5，取承载直径 φ135（内缘 φ105 起承弹簧，外缘留 15 mm 挡边）。</p>
+<h2>7.3 特征尺寸汇总</h2>
+<table>
+<thead>
+<tr>
+<th>特征</th>
+<th>尺寸</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>筒体</td>
+<td><strong>φ46 × 壁厚 2 × 长 340</strong></td>
+<td>冷拔精密钢管（内腔 φ42）</td>
+</tr>
+<tr>
+<td>底盖</td>
+<td>厚 <strong>4 mm</strong>，焊接</td>
+<td>承底阀；筒体总高 344</td>
+</tr>
+<tr>
+<td>弹簧盘</td>
+<td><strong>外径 φ135、中心孔 φ46、厚 6、距底端 191</strong></td>
+<td>承载面内缘 φ105；双面角焊缝 4 mm</td>
+</tr>
+<tr>
+<td>加强筋</td>
+<td><strong>4 条</strong>，长 20 × 宽 10，沿圆周均布</td>
+<td>弹簧盘 ↔ 筒体之间（计算书未提，补充件）</td>
+</tr>
+<tr>
+<td>下支架（U 形夹）</td>
+<td>耳板厚 <strong>8</strong>、2×<strong>φ13</strong> 孔、<strong>孔距 35</strong>、夹口 30 宽 × 70 深、耳板宽 60</td>
+<td>与筒体焊接，角焊缝 5</td>
+</tr>
+<tr>
+<td>上端口部</td>
+<td>内孔车削 <strong>φ38</strong>（深 = 筒体长/2 = <strong>170</strong>），口部倒角</td>
+<td>⚠ 见下注</td>
+</tr>
+<tr>
+<td>材料</td>
+<td>45号优质碳素结构钢精密管 + Q345B低合金高强度结构钢板</td>
+<td>表面电泳涂装（内外防腐）</td>
+</tr>
+<tr>
+<td>转向节连接</td>
+<td>2 × <strong>M12×1.25</strong>（10.9 级），<strong>153 N·m</strong></td>
+<td>实车为偏心调整螺栓（丰田 48190-0K040），用于外倾角微调；本设计按固定式处理</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>上口 φ38 的几何疑点</strong>：此值小于筒体内腔 φ42，而"车削"只能扩大孔径、做不出更小的孔，
+故"在内腔 φ42 里车出一个 φ38 的上口孔"物理上不成立。两种可能：(a) 上端段是<strong>加厚壁</strong>
+（壁厚 4 而非 2），内孔 38 成立；(b) 38 实为<strong>导向器/油封总成的外径</strong>，筒体上口仍是 φ42、只需倒角。
+二者建模结果不同（详见参数文件对应注释）。</p>
+<p>⚠️ <strong>下支架轴向位置</strong>：计算书未给定，待装配图 / 转向节接口确定后补，不影响轮廓建模。</p>
+</blockquote>
+<hr />
+<h1>8 下摆臂结构设计</h1>
+<blockquote>
+<p>源自 <a href="../01_设计计算/06_下摆臂结构设计.md"><code>01_设计计算/06_下摆臂结构设计.md</code></a></p>
+<p><strong>📎 本章零件参数文件（单一参数源，点击跳转）</strong>：
+<strong><a href="../02_参数/20_下摆臂.toml">02_参数/20_下摆臂.toml</a></strong></p>
+</blockquote>
+<h2>8.1 结构形式</h2>
+<p>钢板冲压焊接式下摆臂（<strong>A 形双臂结构</strong>）：内侧两个铰接点（前后向布置，橡胶衬套，与副车架连接）、外侧球头座（装下球头，接转向节）。臂体由两片冲压钢板<strong>各自冲成 U 形后对扣</strong>成箱形截面——左右侧壁相互重叠（<strong>每侧 2 层板</strong>），顶壁 / 底壁各 1 层；周边及侧壁重叠处焊接。</p>
+<p><strong>截面沿长度分三段，各自独立（不是等截面）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>段</th>
+<th>位置</th>
+<th>截面 外宽 B × 外高 H</th>
+<th>B/H</th>
+<th>设计逻辑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>外端球头安装段</td>
+<td>P1 附近</td>
+<td>50 × 60 mm</td>
+<td>0.83</td>
+<td>弯矩最大 → 优先抗弯，高而窄</td>
+</tr>
+<tr>
+<td>中间主体段</td>
+<td>中段</td>
+<td>42 × 45 mm</td>
+<td>0.93</td>
+<td>抗弯抗扭均衡、减重优先</td>
+</tr>
+<tr>
+<td>内端衬套安装段</td>
+<td>P2 / P3 附近</td>
+<td>55 × 50 mm</td>
+<td>1.10</td>
+<td>侧向力集中 → 加宽提升抗扭与衬套空间</td>
+</tr>
+</tbody>
+</table>
+<p>板厚统一 <strong>t = 3 mm</strong>。两片 U 形对扣后：<strong>内宽 = 外宽 − 4t，内高 = 外高 − 2t</strong>（左右侧壁各 2 层 → 扣 4 层；顶底各 1 层 → 扣 2 层）。</p>
+<h2>8.2 计算载荷</h2>
+<p>最恶劣工况为侧向（转弯），轮胎侧向力经转向节传至球头：</p>
+<pre><code>F = μ · F_z · k_d · λ = 0.8 × 5204 × 1.4 × 0.6 = 3497 N ≈ 3.5 kN
+</code></pre>
+<p>力学模型为悬臂梁（球头端受侧向力，内端铰接固定）。<strong>力臂取有效摆长 320 mm</strong>——即球铰点 P1 到摆动轴线的垂直距离，也就是侧向力对该轴线的力臂：</p>
+<pre><code>M_max = F · L_eff = 3500 × 0.320 = 1120 N·m
+</code></pre>
+<h2>8.3 截面设计与弯曲校核</h2>
+<p>最薄弱截面取<strong>中间主体段</strong>（三段中截面最小，而弯矩仍大）：外宽 42 × 外高 45，板厚 3：</p>
+<pre><code>内腔 b × h = (42 − 4×3) × (45 − 2×3) = 30 × 39 mm
+W = (42×45³ − 30×39³) / (6×45) = 7584 mm³
+σ = M_max / W = 1 120 000 / 7584 = 147.7 MPa
+</code></pre>
+<p><strong>材料 QStE420</strong>（EN 10149-2 / SEW 092 的 S420MC，热机械轧制细晶高强钢；板厚 ≤ 3 mm 时屈服强度 ≥ 420 MPa）：</p>
+<pre><code>安全系数 n = 420 / 147.7 = 2.84 ✓
+</code></pre>
+<blockquote>
+<p>侧壁双层使更多材料远离中性轴，抗弯能力优于同等重量的单层壁截面。</p>
+</blockquote>
+<h2>8.4 连接结构设计</h2>
+<p>本件两端各有一种连接：<strong>内端与副车架铰接（2 处）</strong>、<strong>外端与转向节球铰（1 处）</strong>。两处的孔都采用<strong>焊接衬管</strong>工艺——避免箱形内腔中段空心带来的压装鼓胀与松动问题。</p>
+<h3>8.4.1 内端铰接：衬套总成（5 层）＋ 焊接衬管</h3>
+<table>
+<thead>
+<tr>
+<th>层</th>
+<th>零件</th>
+<th>尺寸 (mm)</th>
+<th>作用 / 配合</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①</td>
+<td>贯穿螺栓</td>
+<td><strong>M14×1.5</strong>，10.9 级</td>
+<td>与副车架紧固，配自锁螺母</td>
+</tr>
+<tr>
+<td>②</td>
+<td>内金属套</td>
+<td>φ14.5 × φ20</td>
+<td>与螺栓留 <strong>0.5 微间隙</strong></td>
+</tr>
+<tr>
+<td>③</td>
+<td><strong>橡胶层</strong></td>
+<td>厚 <strong>4</strong>（φ20 → φ28）</td>
+<td><strong>承担扭转变形与减振</strong></td>
+</tr>
+<tr>
+<td>④</td>
+<td>外金属套</td>
+<td>φ28 × φ32</td>
+<td>与摆臂孔<strong>过盈</strong></td>
+</tr>
+<tr>
+<td>⑤</td>
+<td>摆臂孔（衬管内孔）</td>
+<td><strong>φ32</strong></td>
+<td>过盈配合面</td>
+</tr>
+<tr>
+<td>—</td>
+<td><strong>衬管</strong>（焊接在臂板上）</td>
+<td>内孔 φ32；外径 = 内端段截面高；<strong>长 65</strong></td>
+<td>圆管车制，穿过两片后<strong>两端焊死</strong></td>
+</tr>
+</tbody>
+</table>
+<p>②③④ 三层组成<strong>【衬套总成】，单独出图</strong>。<strong>为何不直接在两片上冲孔</strong>：箱形内腔中段是空的，衬套只有两端有径向约束 → 压装时外金属套会鼓胀、工作时无约束易松动异响；衬管提供<strong>连续、规整、壁厚可控</strong>的孔壁（壁厚 4），压装可靠。</p>
+<h3>8.4.2 外端球铰：整体式单壳球铰（压装 ＋ 端口滚铆）</h3>
+<p>外端采用乘用车主流的<strong>整体式单壳球铰</strong>：由 <strong>① 球销</strong>、<strong>② 上下球座</strong>、<strong>③ 壳体</strong>、<strong>④ 防尘罩</strong> 组成。与内端"焊接衬管"不同，外端壳体靠<strong>压装过盈</strong>装入摆臂的球头座，端口<strong>滚铆翻边</strong>扣住上球座法兰实现轴向限位——不用螺栓，更紧凑也便于更换。</p>
+<table>
+<thead>
+<tr>
+<th>件</th>
+<th>零件</th>
+<th>尺寸 (mm)</th>
+<th>材料</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①</td>
+<td><strong>球销</strong>（另立件）</td>
+<td>球面 <strong>φ25</strong>；锥面 <strong>1:11</strong>（大端 φ20 → 小端 φ15、长 55）；杆部 <strong>φ15</strong>；螺纹 M14×1.5</td>
+<td>40Cr合金结构钢（调质＋高频淬火）</td>
+</tr>
+<tr>
+<td>②</td>
+<td><strong>上下球座</strong></td>
+<td>下座 φ38 / 上座 φ38（带法兰 φ40×2），上座高 12；内球面 R12.5</td>
+<td>25%玻纤增强聚甲醛（POM-GF25）＋内球面 PTFE 自润滑层</td>
+</tr>
+<tr>
+<td>③</td>
+<td><strong>壳体</strong>（整体式单壳）</td>
+<td>等径 <strong>φ45</strong>；内孔主 φ38 / 端口 φ41；总高 <strong>50</strong>；压装段长 <strong>32</strong></td>
+<td>10号优质碳素结构钢（冷挤压）</td>
+</tr>
+<tr>
+<td>④</td>
+<td>防尘罩（配套件）</td>
+<td>下卡径 φ44 / 上卡径 φ16 / 自由高 28</td>
+<td>EPDM，邵氏 60±5 A</td>
+</tr>
+</tbody>
+</table>
+<p><strong>与摆臂的连接</strong>：壳体压装段 φ45 压入摆臂「球头座内孔 φ45H7」（过盈 0.035~0.12、压装力 18~25 kN），压装后<strong>抗拔脱力 ≥ 18 kN</strong>；端口经<strong>高速旋压滚铆</strong>向内翻边 2.5~3 扣住上球座法兰，成品<strong>轴向窜动量 ≤ 0.15</strong>。</p>
+<p>（注：端口需外扩到 φ41 才能让上球座法兰 φ40 通过——原按 φ42 外径／壁厚 2 得到的内孔只有 φ38，装不进。）</p>
+<p><strong>与转向节的连接</strong>：球销锥面 <strong>1:11</strong> 插入转向节锥孔，从上方用 M14×1.5 螺母拉合（锥面自定心、拉紧后无间隙；锁紧件为开槽螺母 GB/T 9457 + 开口销 φ3.2×26，力矩 90 N·m）；球头设 EPDM 防尘罩并注入极压锂基脂 ≈8 g。球销<strong>额定静载荷 ≥ 4 倍单侧轮荷（4 × 5204 = 20.8 kN ≈ 21 kN）</strong>。</p>
+<h2>8.5 本章结论</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>结构型式</td>
+<td>冲压焊接 A 形双臂（箱形截面）</td>
+</tr>
+<tr>
+<td>臂体截面</td>
+<td><strong>三段渐变</strong>：外端 50×60 ／ 中间 42×45 ／ 内端 55×50（板厚 3）</td>
+</tr>
+<tr>
+<td>内端铰点间距</td>
+<td><strong>269 mm</strong></td>
+</tr>
+<tr>
+<td>有效摆长 L_eff</td>
+<td><strong>320 mm</strong>（P1 至摆动轴线的垂直距离）</td>
+</tr>
+<tr>
+<td>材料</td>
+<td>摆臂本体 <strong>QStE420热机械轧制高强钢</strong> ｜ 衬管与内外套 <strong>20号优质碳素结构钢</strong> ｜ 球销 <strong>40Cr合金结构钢</strong> ｜ 球座 <strong>25%玻纤增强聚甲醛（POM-GF25）</strong></td>
+</tr>
+<tr>
+<td>弯曲应力 / 安全系数</td>
+<td><strong>147.7 MPa / 2.84 ✓</strong></td>
+</tr>
+<tr>
+<td>内端连接</td>
+<td>衬套总成（5 层）+ 焊接衬管（内孔 φ32，长 65）</td>
+</tr>
+<tr>
+<td>外端连接</td>
+<td>整体式单壳球铰（等径 φ45 压装 + 端口滚铆），球销 φ25 为另立件</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>9 强度校核汇总</h1>
+<blockquote>
+<p>源自 <a href="../01_设计计算/08_强度校核汇总.md"><code>01_设计计算/08_强度校核汇总.md</code></a></p>
+</blockquote>
+<h2>9.1 校核总表</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>校核对象</th>
+<th>工况/载荷</th>
+<th>计算应力</th>
+<th>许用/极限</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>螺旋弹簧</td>
+<td>静载 4.96 kN</td>
+<td>701 MPa</td>
+<td>760 MPa</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>2</td>
+<td>螺旋弹簧</td>
+<td>极限 6.5 kN</td>
+<td>919 MPa</td>
+<td>1070 MPa</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>3</td>
+<td>筒壁（φ46×2）</td>
+<td>内压 2.5 MPa</td>
+<td>26 MPa</td>
+<td>≥345 MPa</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>4</td>
+<td>活塞杆（φ15）</td>
+<td>压杆稳定</td>
+<td>临界 56 kN</td>
+<td>轴向力 6.5 kN</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>5</td>
+<td>下摆臂臂体（中间主体段 42×45×3）</td>
+<td>侧向弯矩 1120 N·m</td>
+<td>147.7 MPa</td>
+<td>420 MPa（QStE420）</td>
+<td>✓ n=2.84</td>
+</tr>
+<tr>
+<td>6</td>
+<td>下支架螺栓（2×<strong>M12×1.25</strong>）</td>
+<td>横向力 5.8 kN</td>
+<td>≈25 MPa</td>
+<td>10.9 级许用</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>7</td>
+<td>弹簧盘角焊缝</td>
+<td>极限剪力 6.5 kN</td>
+<td>8 MPa</td>
+<td>≥100 MPa</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>8</td>
+<td>下球头</td>
+<td>静载荷</td>
+<td>额定 ≥21 kN</td>
+<td>3.5 kN 工作</td>
+<td>✓</td>
+</tr>
+</tbody>
+</table>
+<h2>9.2 关键校核过程</h2>
+<p><strong>筒壁内压</strong>（薄壁环向应力）：</p>
+<pre><code>σ = p·D_in/(2t) = 2.5 × 42/(2×2) = 26.3 MPa ≪ 345 MPa ✓
+</code></pre>
+<p><strong>活塞杆稳定性</strong>（欧拉公式）：</p>
+<pre><code>I = πd⁴/64 = 2485 mm⁴；P_cr = π²EI/L² = 56.1 kN；n = 56.1/6.5 = 8.6 ✓
+</code></pre>
+<p><strong>弹簧盘焊缝</strong>（角焊缝剪切，焊脚 4 mm 双面）：</p>
+<pre><code>A = 2 × 2.8 × π×46 ≈ 809 mm²；τ = 6504/809 = 8.0 MPa ≪ [τ] ✓
+</code></pre>
+<h2>9.3 校核结论</h2>
+<p><strong>全部校核项目通过。</strong> 各零部件均为常规成熟结构，应力水平与安全系数处于同类产品正常范围；最大应力部位为下摆臂臂体（<strong>147.7 MPa，n = 2.84</strong>），与冲压焊接摆臂的典型设计水位一致。</p>
+<hr />
+<h1>10 结论</h1>
+<p>本设计完成了卡罗拉（E210）前悬架的方案论证、载荷计算、刚度匹配、导向机构几何设计、四个关键零部件（螺旋弹簧、减振器、减振器壳、下摆臂）的结构设计与强度校核，全部校核项目通过。</p>
+<p><strong>主要设计结果</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>零件/系统</th>
+<th>核心参数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>悬架系统</td>
+<td>偏频 1.25 Hz；静挠度 160 mm；杠杆比 0.93</td>
+</tr>
+<tr>
+<td>螺旋弹簧</td>
+<td>φ13.5 × φ118 × H₀330，6 有效圈，60Si2MnA，刚度 33.4 N/mm</td>
+</tr>
+<tr>
+<td>减振器</td>
+<td>双筒式，工作缸 φ30，杆 φ15，行程 175，阻尼比 0.40/0.20</td>
+</tr>
+<tr>
+<td>减振器壳</td>
+<td>φ46×2×<strong>340</strong>，弹簧盘 φ135@191，U 形下支架 2×<strong>φ13</strong>@35</td>
+</tr>
+<tr>
+<td>下摆臂</td>
+<td>A 形双臂，有效摆长 320（内铰点间距 269），三段渐变箱形 50×60 ／ 42×45 ／ 55×50，QStE420热机械轧制高强钢</td>
+</tr>
+<tr>
+<td>转向节</td>
+<td>球墨铸铁 QT450-10；下球头锥孔 1:11、减振器双螺栓 M12×1.25 夹持（孔距 35）、轮毂轴承 3×M12（分布圆 φ160）、卡钳座 2×φ12（圆周 φ300）</td>
+</tr>
+<tr>
+<td>横拉杆</td>
+<td>焊接式：两端球头座 φ50/φ45×63 + 主体钢管 φ32×3（总长 600，折弯 6°），压装同款球头总成</td>
+</tr>
+<tr>
+<td>支柱上部</td>
+<td>活塞杆 φ15/M14×1.5 ｜ 缓冲块 φ60×30 ｜ 上弹簧座（阶梯孔 φ16/φ60 + 凸台 φ64）｜ 顶胶 φ150×41</td>
+</tr>
+<tr>
+<td>导向机构</td>
+<td>主销内倾 <strong>12.58°</strong>，后倾 <strong>3.17°</strong>（丰田官方值），侧倾中心 <strong>29 mm</strong>，摆臂 <strong>439.3 ≈ 440</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>后续工作</strong>：装配体完善（硬点 + 配合关系）、零件图与装配图出图。</p>
+<hr />
+<h1>附录 A 参数文件清单</h1>
+<p>本设计全部参数收录于 <code>02_参数/</code> 目录（TOML 格式）。<strong>分工口径</strong>：</p>
+<ul>
+<li><strong>TOML = 设计参数源与留档</strong> —— 含全部设计输入、派生公式与推导注释（本说明书中的数值与之对应）</li>
+<li><strong><code>03_模型/*.txt</code> = SolidWorks 模型的方程式接口</strong> —— 由 TOML 导出，仅保留模型实际引用的条目；
+  模型通过「工具 → 方程式 → 链接到外部文件」加载</li>
+<li>参数修改：编辑 TOML → 手工更新对应 txt（<strong>导出脚本已按交付要求移除</strong>）</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>参数文件</th>
+<th>内容</th>
+<th>对应零件/系统</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../02_参数/00_全局.toml">00_全局.toml</a></td>
+<td>材料库、整车工况、设计规范、定位参数</td>
+<td>全局（各零件自动继承）</td>
+</tr>
+<tr>
+<td><strong><a href="../02_参数/10_螺旋弹簧.toml">10_螺旋弹簧.toml</a></strong></td>
+<td>螺旋弹簧设计参数与派生量（14 条）</td>
+<td>螺旋弹簧</td>
+</tr>
+<tr>
+<td><strong><a href="../02_参数/20_下摆臂.toml">20_下摆臂.toml</a></strong></td>
+<td>下摆臂硬点、分段截面、两端接口（49 条）</td>
+<td>下摆臂</td>
+</tr>
+<tr>
+<td><strong><a href="../02_参数/30_减振器壳.toml">30_减振器壳.toml</a></strong></td>
+<td>减振器壳筒体 / 弹簧盘 / 下支架 / 上口（28 条）</td>
+<td>减振器壳</td>
+</tr>
+<tr>
+<td><strong><a href="../02_参数/40_衬套.toml">40_衬套.toml</a></strong></td>
+<td>内端衬套总成三层（内套 / 橡胶 / 外套）尺寸与长度（18 条）</td>
+<td>衬套总成</td>
+</tr>
+<tr>
+<td><strong><a href="../02_参数/50_球头总成.toml">50_球头总成.toml</a></strong></td>
+<td>球头总成（整体式单壳 + 上下球座 + 防尘罩）（25 条）</td>
+<td>球头总成</td>
+</tr>
+<tr>
+<td><strong><a href="../02_参数/60_球头.toml">60_球头.toml</a></strong></td>
+<td>球头（球头销）：球面 / 锥面 / 杆部 / 螺纹 / 开口销孔（17 条）</td>
+<td>球头（球头销）</td>
+</tr>
+<tr>
+<td><strong><a href="../02_参数/70_转向节.toml">70_转向节.toml</a></strong></td>
+<td>转向节：球头锥孔 / 夹持凸耳 / 轴承座 / 卡钳座 / 轮毂连接座（40 条）</td>
+<td>转向节（配合件）</td>
+</tr>
+<tr>
+<td><strong><a href="../02_参数/75_横拉杆.toml">75_横拉杆.toml</a></strong></td>
+<td>横拉杆：两端球头座（φ50/φ45×63）+ 主体钢管 φ32×3（总长 600）+ 折弯（10 条）</td>
+<td>转向系统</td>
+</tr>
+<tr>
+<td><strong><a href="../02_参数/81_活塞杆.toml">81_活塞杆.toml</a></strong></td>
+<td>活塞杆：φ15 光杆 + 杆端 M14×1.5 螺纹段（5 条）</td>
+<td>支柱上部·活塞杆</td>
+</tr>
+<tr>
+<td><strong><a href="../02_参数/82_压缩缓冲块.toml">82_压缩缓冲块.toml</a></strong></td>
+<td>压缩缓冲块：与活塞杆的配合孔 / 自由高（5 条）</td>
+<td>支柱上部·缓冲块</td>
+</tr>
+<tr>
+<td><strong><a href="../02_参数/83_上弹簧座.toml">83_上弹簧座.toml</a></strong></td>
+<td>上弹簧座：中心阶梯孔 + 上端面凸台（主体复制下弹簧盘）（9 条）</td>
+<td>支柱上部·上弹簧座</td>
+</tr>
+<tr>
+<td><strong><a href="../02_参数/85_顶胶.toml">85_顶胶.toml</a></strong></td>
+<td>顶胶（上支座）：中心孔 / 外径 / 高 / 分层壁厚 / 塔顶螺孔 / 下端面止口（13 条）</td>
+<td>支柱上部·顶胶</td>
+</tr>
+<tr>
+<td><strong><a href="../02_参数/90_标准件.toml">90_标准件.toml</a></strong></td>
+<td>标准件（查国标表）：M14 六角螺母、防松垫片</td>
+<td>全局（零件表引用）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>附录 B 设计文件索引</h1>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../00_调研/卡罗拉前悬架调研报告.md">00_调研/卡罗拉前悬架调研报告.md</a></td>
+<td>车型确认、悬架方案调研</td>
+</tr>
+<tr>
+<td><a href="../01_设计计算/">01_设计计算/01~08</a></td>
+<td>设计计算书（分节推导过程）</td>
+</tr>
+<tr>
+<td><a href="../02_参数/">02_参数/</a></td>
+<td>参数文件（TOML，清单见附录 A）</td>
+</tr>
+<tr>
+<td><a href="../03_模型/">03_模型/</a></td>
+<td>SolidWorks 模型（零件 13 件 + 装配体）与各零件的外部方程式 txt</td>
+</tr>
+<tr>
+<td>└ 主要零件</td>
+<td>减振器壳 / 下摆臂 / 螺旋弹簧 / 衬套 / 球头总成 / 球头 / 转向节 / 转向横拉杆 / 活塞杆 / 缓冲块 / 上弹簧座 / 顶胶</td>
+</tr>
+<tr>
+<td>└ 主要装配体</td>
+<td>减振器.SLDASM ／ 下摆臂总成.SLDASM ／ 转向横拉杆总成.SLDASM ／ 麦弗逊悬架.SLDASM</td>
+</tr>
+<tr>
+<td><a href="../04_脚本/params.py">04_脚本/params.py</a></td>
+<td>参数求值器（依赖排序、循环依赖检测、校核规则）</td>
+</tr>
+<tr>
+<td><a href="../04_脚本/建材料.py">04_脚本/建材料.py</a></td>
+<td>往 SW 自定义材质库写入国标材料</td>
+</tr>
+<tr>
+<td><a href="./设计说明书.md">05_交付/设计说明书.md</a></td>
+<td>本说明书</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：参数导出脚本（TOML → txt）在模型全部建成后已移除；后续修改参数请编辑 TOML 并手工同步对应 txt。</p>
+</blockquote>
+</body>
+</html>
