@@ -1,0 +1,389 @@
+{
+ "body_material": {
+  "u'\\u7403\\u5934\\u603b\\u6210_\\u7403\\u58f3_\\u6a2a\\u62c9\\u6746'": "u'10\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u7403\\u5934'": "u'40Cr\\u5408\\u91d1\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u9876\\u80f6_\\u6a61\\u80f6\\u5c42'": "u'\\u5929\\u7136\\u6a61\\u80f6\\uff08NR60\\uff09'", 
+  "external tab washers gb(GB_FASTENER_WASHER_ETW 16)": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u51cf\\u632f\\u5668\\u58f3'": "u'45\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u51cf\\u632f\\u5668\\u58f3_\\u4e0b\\u5f39\\u7c27\\u5ea7'": "u'Q345B\\u4f4e\\u5408\\u91d1\\u9ad8\\u5f3a\\u5ea6\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u87ba\\u65cb\\u5f39\\u7c27\\u526f\\u672c'": "u'60Si2MnA\\u5f39\\u7c27\\u94a2'", 
+  "u'\\u8f6c\\u5411\\u6a2a\\u62c9\\u6746_\\u7403\\u5934\\u5ea7'": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u9876\\u80f6'": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u4e0a\\u5f39\\u7c27\\u5ea7'": "u'Q345B\\u4f4e\\u5408\\u91d1\\u9ad8\\u5f3a\\u5ea6\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u4e0b\\u6446\\u81c2'": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u5916\\u820c\\u6b62\\u52a8\\u57ab\\u5708'": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u6d3b\\u585e'": "u'40Cr\\u5408\\u91d1\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u9876\\u80f6_\\u5185\\u5c42'": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u51cf\\u632f\\u5668\\u58f3_\\u8033\\u677f'": "u'Q345B\\u4f4e\\u5408\\u91d1\\u9ad8\\u5f3a\\u5ea6\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u7403\\u5934\\u603b\\u6210_\\u4e0a\\u7403\\u5ea7_\\u4e0b\\u6446\\u81c2'": "u'25%\\u73bb\\u7ea4\\u589e\\u5f3a\\u805a\\u7532\\u919b\\uff08POM-GF25\\uff09'", 
+  "u'\\u7403\\u5934\\u603b\\u6210_\\u7403\\u58f3_\\u4e0b\\u6446\\u81c2'": "u'10\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u4e0b\\u6446\\u81c2_\\u5185\\u886c\\u7ba12'": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u886c\\u5957_\\u6a61\\u80f6\\u5c422'": "u'\\u5929\\u7136\\u6a61\\u80f6\\uff08NR60\\uff09'", 
+  "hex nuts 1-fine pitch-grades ab gb(GB_FASTENER_NUT_SNAB1XY M12X1.25-N)": "u'45\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u4e0b\\u6446\\u81c2_\\u672c\\u4f53\\u5185\\u5c42'": "u'QStE420\\u70ed\\u673a\\u68b0\\u8f67\\u5236\\u9ad8\\u5f3a\\u94a2'", 
+  "u'\\u5f00\\u69fd\\u87ba\\u6bcd'": "u'45\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u886c\\u5957_\\u5916\\u5c42\\u91d1\\u5c5e1'": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u8f6c\\u5411\\u8282'": "u'\\u7403\\u58a8\\u94f8\\u94c1\\uff08QT450-10\\uff09'", 
+  "u'\\u7403\\u5934\\u603b\\u6210_\\u4e0b\\u7403\\u5ea7_\\u4e0b\\u6446\\u81c2'": "u'25%\\u73bb\\u7ea4\\u589e\\u5f3a\\u805a\\u7532\\u919b\\uff08POM-GF25\\uff09'", 
+  "u'\\u7403\\u5934_\\u4e0b\\u6446\\u81c2'": "u'40Cr\\u5408\\u91d1\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u51cf\\u632f\\u5668\\u58f3_\\u7b52\\u8eab'": "u'45\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "hexagon head bolts gb(GB_FASTENER_BOLT_SB A M12X60-N)": "u'40Cr\\u5408\\u91d1\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u7f13\\u51b2\\u5757'": "u'\\u5fae\\u5b54\\u805a\\u6c28\\u916f\\uff08PU\\uff09'", 
+  "u'\\u7403\\u5934\\u603b\\u6210'": "u'25%\\u73bb\\u7ea4\\u589e\\u5f3a\\u805a\\u7532\\u919b\\uff08POM-GF25\\uff09'", 
+  "u'\\u5f39\\u7c27\\u57ab\\u5708'": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u9876\\u80f6_\\u6cd5\\u5170\\u5c42'": "u'10\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u886c\\u5957_\\u5185\\u5c42\\u91d1\\u5c5e1'": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u7403\\u5934_\\u6a2a\\u62c9\\u6746'": "u'40Cr\\u5408\\u91d1\\u7ed3\\u6784\\u94a2'", 
+  "needle rollers thrust bearing_skf(SKF - AXK 4060 - 32,SI,AC,32)": "u'10\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "hex slotted castle nuts l-fine pitch-ab gb(GB_HEXAGON_SLOTTED_TYPE5 M14X1.5 YB-N)": "u'45\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u4e0b\\u6446\\u81c2_\\u5185\\u886c\\u7ba11'": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "round nuts gb(GB_FASTENER_NUT_RN M14X1.5-N)": "u'45\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u886c\\u5957_\\u6a61\\u80f6\\u5c421'": "u'\\u5929\\u7136\\u6a61\\u80f6\\uff08NR60\\uff09'", 
+  "u'\\u63a8\\u529b\\u6eda\\u9488\\u8f74\\u627f'": "u'10\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u886c\\u5957_\\u5185\\u5c42\\u91d1\\u5c5e2'": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u4e0b\\u6446\\u81c2_\\u672c\\u4f53\\u5916\\u5c42'": "u'QStE420\\u70ed\\u673a\\u68b0\\u8f67\\u5236\\u9ad8\\u5f3a\\u94a2'", 
+  "spring lock washers--normal type gb(GB_FASTENER_WASHER_SW 12)": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u516d\\u89d2\\u5934\\u87ba\\u6813'": "u'40Cr\\u5408\\u91d1\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u886c\\u5957_\\u5916\\u5c42\\u91d1\\u5c5e2'": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u7403\\u5934\\u603b\\u6210_\\u4e0b\\u7403\\u5ea7_\\u6a2a\\u62c9\\u6746'": "u'25%\\u73bb\\u7ea4\\u589e\\u5f3a\\u805a\\u7532\\u919b\\uff08POM-GF25\\uff09'", 
+  "u'\\u5706\\u87ba\\u6bcd'": "u'45\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u7403\\u5934\\u603b\\u6210_\\u4e0a\\u7403\\u5ea7_\\u6a2a\\u62c9\\u6746'": "u'25%\\u73bb\\u7ea4\\u589e\\u5f3a\\u805a\\u7532\\u919b\\uff08POM-GF25\\uff09'", 
+  "u'\\u7ec6\\u7259\\u516d\\u89d2\\u87ba\\u6bcd'": "u'45\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u886c\\u5957'": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u5bfc\\u5411\\u5757'": "u'45\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u8f6c\\u5411\\u6a2a\\u62c9\\u6746_\\u672c\\u4f53'": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u4e0b\\u6446\\u81c2_\\u7403\\u5934\\u5ea7'": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "split pins(GB_CONNECTING_PIECE_PIN_AP 3.2X25)": "u'10\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u5f00\\u53e3\\u9500'": "u'10\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'", 
+  "u'\\u8f6c\\u5411\\u6a2a\\u62c9\\u6746'": "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'"
+ }, 
+ "spring_loc": {
+  "ReferenceScopeLocation": [
+   2655
+  ], 
+  "MobileLocation": [], 
+  "Load": "4730 [N]", 
+  "MobileScopeLocation": [
+   2463
+  ], 
+  "ReferenceLocation": []
+ }, 
+ "point_mass": {
+  "PinballRegion": "0 [mm]", 
+  "ZCoordinate": "0 [mm]", 
+  "XCoordinate": "0 [mm]", 
+  "YCoordinate": "0 [mm]", 
+  "name": "u'\\u7b49\\u6548\\u7c27\\u4e0a\\u8d28\\u91cf\\uff08\\u524d\\u89d2482kg\\uff09'", 
+  "loc_ids": [
+   2523
+  ], 
+  "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x000000000000086F [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>", 
+  "AppliedBy": "RemoteAttachment", 
+  "Mass": "482.16 [kg]", 
+  "Behavior": "Rigid", 
+  "CoordinateSystem": "<Ansys.ACT.Automation.Mechanical.CoordinateSystem object at 0x0000000000000870 [Ansys.ACT.Automation.Mechanical.CoordinateSystem]>"
+ }, 
+ "coordinate_systems": [
+  {
+   "OriginZ": "0 [mm]", 
+   "OriginX": "0 [mm]", 
+   "OriginY": "0 [mm]", 
+   "name": "u'\\u5168\\u5c40\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1266.8998027295972 [mm]", 
+   "OriginX": "-115.41274933720192 [mm]", 
+   "OriginY": "-613.65821766535578 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1654.3812223504895 [mm]", 
+   "OriginX": "261.27298241307483 [mm]", 
+   "OriginY": "3.5384537873043365 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1267.5721042682446 [mm]", 
+   "OriginX": "-115.5744265593836 [mm]", 
+   "OriginY": "-616.57744065983911 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1141.9496255935117 [mm]", 
+   "OriginX": "-89.682713894888735 [mm]", 
+   "OriginY": "-149.07842695338016 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1086.1614151088272 [mm]", 
+   "OriginX": "-76.0577717857353 [mm]", 
+   "OriginY": "96.805602592225029 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1086.8755264190056 [mm]", 
+   "OriginX": "37.871481007367954 [mm]", 
+   "OriginY": "-53.421372854783129 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1201.6957082820525 [mm]", 
+   "OriginX": "-99.732318856597132 [mm]", 
+   "OriginY": "-330.53341022098965 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1163.8226950195258 [mm]", 
+   "OriginX": "-90.624529038913 [mm]", 
+   "OriginY": "-166.08377370431049 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1066.009913653241 [mm]", 
+   "OriginX": "-71.360294194448969 [mm]", 
+   "OriginY": "180.80818183318632 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1381.3630195700484 [mm]", 
+   "OriginX": "50.7394833159245 [mm]", 
+   "OriginY": "250.05218920351822 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1377.2520899162853 [mm]", 
+   "OriginX": "-204.53806940249009 [mm]", 
+   "OriginY": "240.9354738006063 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1247.7533884787852 [mm]", 
+   "OriginX": "-146.73508603833824 [mm]", 
+   "OriginY": "243.83292662547274 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb 2'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1086.8755262353432 [mm]", 
+   "OriginX": "41.699607787311756 [mm]", 
+   "OriginY": "15.699016283643845 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1253.7899119042559 [mm]", 
+   "OriginX": "-112.26005342109583 [mm]", 
+   "OriginY": "-556.73333761820436 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1240.0169237939022 [mm]", 
+   "OriginX": "-108.94789338774871 [mm]", 
+   "OriginY": "-496.92920022897516 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1066.4260035047851 [mm]", 
+   "OriginX": "-71.464543756209949 [mm]", 
+   "OriginY": "178.99129706333338 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1067.2061018580112 [mm]", 
+   "OriginX": "-71.65999411663698 [mm]", 
+   "OriginY": "175.58494429672658 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1072.3324638444319 [mm]", 
+   "OriginX": "-72.944382545071917 [mm]", 
+   "OriginY": "153.20033437818114 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1086.8755262353432 [mm]", 
+   "OriginX": "41.6996172100795 [mm]", 
+   "OriginY": "15.6991864205005 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1086.8755262350417 [mm]", 
+   "OriginX": "41.506071697299966 [mm]", 
+   "OriginY": "12.204541737005608 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1086.8755262350417 [mm]", 
+   "OriginX": "40.234201249746754 [mm]", 
+   "OriginY": "-10.760264981558361 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1381.3193044296117 [mm]", 
+   "OriginX": "48.024891968603832 [mm]", 
+   "OriginY": "249.95524312860817 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1377.2195508546083 [mm]", 
+   "OriginX": "-206.55865664975906 [mm]", 
+   "OriginY": "240.86331266194028 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1070.6107879880396 [mm]", 
+   "OriginX": "-72.512875481280389 [mm]", 
+   "OriginY": "160.71730359801413 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1086.8752565361551 [mm]", 
+   "OriginX": "40.661284948978576 [mm]", 
+   "OriginY": "-3.0484045190230962 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1201.6957082820525 [mm]", 
+   "OriginX": "-99.732318856597132 [mm]", 
+   "OriginY": "-330.53341022098965 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1220.856314368297 [mm]", 
+   "OriginX": "-104.34010572064437 [mm]", 
+   "OriginY": "-413.73129797501036 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1238.2241176784771 [mm]", 
+   "OriginX": "-108.51675522691728 [mm]", 
+   "OriginY": "-489.14459877720122 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1250.4284031606651 [mm]", 
+   "OriginX": "-111.45167002432957 [mm]", 
+   "OriginY": "-542.13722171901986 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1256.7032215158167 [mm]", 
+   "OriginX": "-112.96065285404845 [mm]", 
+   "OriginY": "-569.38331356178 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1257.1514233563814 [mm]", 
+   "OriginX": "-113.06843746921663 [mm]", 
+   "OriginY": "-571.32946527820241 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1381.3193044481916 [mm]", 
+   "OriginX": "48.024893122396172 [mm]", 
+   "OriginY": "249.95524316981516 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1377.2195508599546 [mm]", 
+   "OriginX": "-206.55865631772875 [mm]", 
+   "OriginY": "240.86331267379984 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1264.6587960184686 [mm]", 
+   "OriginX": "-114.873827809176 [mm]", 
+   "OriginY": "-603.92747106447712 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1032.0532306957296 [mm]", 
+   "OriginX": "-101.7657004405476 [mm]", 
+   "OriginY": "-27.2762769792033 [mm]", 
+   "name": "u'\\u8fdc\\u7a0b\\u70b9\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1381.3193044444449 [mm]", 
+   "OriginX": "48.024892889743981 [mm]", 
+   "OriginY": "249.95524316150647 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1377.2195508562077 [mm]", 
+   "OriginX": "-206.55865655038093 [mm]", 
+   "OriginY": "240.86331266549112 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1209.6513 [mm]", 
+   "OriginX": "-101.6455 [mm]", 
+   "OriginY": "-365.0778 [mm]", 
+   "name": "u'\\u6d3b\\u585e\\u5173\\u8282\\u79fb\\u52a8\\u7aef\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1220.856314368297 [mm]", 
+   "OriginX": "-104.34010572064437 [mm]", 
+   "OriginY": "-413.73129797501036 [mm]", 
+   "name": "u'\\u79fb\\u52a8\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1266.6226073758912 [mm]", 
+   "OriginX": "-115.34608993509113 [mm]", 
+   "OriginY": "-612.45460019203915 [mm]", 
+   "name": "u'\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "1266.6226073758912 [mm]", 
+   "OriginX": "-115.34608993509113 [mm]", 
+   "OriginY": "-612.45460019203915 [mm]", 
+   "name": "u'\\u79fb\\u52a8\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }, 
+  {
+   "OriginZ": "970 [mm]", 
+   "OriginX": "-101.7657004405476 [mm]", 
+   "OriginY": "-27 [mm]", 
+   "name": "u'\\u53c2\\u8003\\u5750\\u6807\\u7cfb'", 
+   "CoordinateSystemType": "Cartesian"
+  }
+ ]
+}

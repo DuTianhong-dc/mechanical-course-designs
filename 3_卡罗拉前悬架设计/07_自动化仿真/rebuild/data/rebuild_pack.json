@@ -1,0 +1,1713 @@
+{
+ "source": "suspension_api_v2 (只读副本读回)",
+ "target_session": 10504,
+ "geom": [
+  {
+   "part": "u'\\u7ec6\\u7259\\u516d\\u89d2\\u87ba\\u6bcd'",
+   "body": "hex nuts 1-fine pitch-grades ab gb(GB_FASTENER_NUT_SNAB1XY M12X1.25-N)",
+   "gid": 131,
+   "suppressed": true
+  },
+  {
+   "part": "u'\\u7ec6\\u7259\\u516d\\u89d2\\u87ba\\u6bcd'",
+   "body": "hex nuts 1-fine pitch-grades ab gb(GB_FASTENER_NUT_SNAB1XY M12X1.25-N)",
+   "gid": 181,
+   "suppressed": true
+  },
+  {
+   "part": "u'\\u5f39\\u7c27\\u57ab\\u5708'",
+   "body": "spring lock washers--normal type gb(GB_FASTENER_WASHER_SW 12)",
+   "gid": 208,
+   "suppressed": true
+  },
+  {
+   "part": "u'\\u5f39\\u7c27\\u57ab\\u5708'",
+   "body": "spring lock washers--normal type gb(GB_FASTENER_WASHER_SW 12)",
+   "gid": 235,
+   "suppressed": true
+  },
+  {
+   "part": "u'\\u516d\\u89d2\\u5934\\u87ba\\u6813'",
+   "body": "hexagon head bolts gb(GB_FASTENER_BOLT_SB A M12X60-N)",
+   "gid": 330,
+   "suppressed": true
+  },
+  {
+   "part": "u'\\u516d\\u89d2\\u5934\\u87ba\\u6813'",
+   "body": "hexagon head bolts gb(GB_FASTENER_BOLT_SB A M12X60-N)",
+   "gid": 425,
+   "suppressed": true
+  },
+  {
+   "part": "u'\\u5f00\\u53e3\\u9500'",
+   "body": "split pins(GB_CONNECTING_PIECE_PIN_AP 3.2X25)",
+   "gid": 472,
+   "suppressed": true
+  },
+  {
+   "part": "u'\\u5f00\\u53e3\\u9500'",
+   "body": "split pins(GB_CONNECTING_PIECE_PIN_AP 3.2X25)",
+   "gid": 519,
+   "suppressed": true
+  },
+  {
+   "part": "u'\\u5f00\\u69fd\\u87ba\\u6bcd'",
+   "body": "hex slotted castle nuts l-fine pitch-ab gb(GB_HEXAGON_SLOTTED_TYPE5 M14X1.5 YB-N)",
+   "gid": 779,
+   "suppressed": true
+  },
+  {
+   "part": "u'\\u5f00\\u69fd\\u87ba\\u6bcd'",
+   "body": "hex slotted castle nuts l-fine pitch-ab gb(GB_HEXAGON_SLOTTED_TYPE5 M14X1.5 YB-N)",
+   "gid": 1039,
+   "suppressed": true
+  },
+  {
+   "part": "u'\\u8f6c\\u5411\\u8282'",
+   "body": "u'\\u8f6c\\u5411\\u8282'",
+   "gid": 1459,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u5706\\u87ba\\u6bcd'",
+   "body": "round nuts gb(GB_FASTENER_NUT_RN M14X1.5-N)",
+   "gid": 2091,
+   "suppressed": true
+  },
+  {
+   "part": "u'\\u5916\\u820c\\u6b62\\u52a8\\u57ab\\u5708'",
+   "body": "external tab washers gb(GB_FASTENER_WASHER_ETW 16)",
+   "gid": 2223,
+   "suppressed": true
+  },
+  {
+   "part": "u'\\u87ba\\u65cb\\u5f39\\u7c27\\u526f\\u672c'",
+   "body": "u'\\u87ba\\u65cb\\u5f39\\u7c27\\u526f\\u672c'",
+   "gid": 2289,
+   "suppressed": true
+  },
+  {
+   "part": "u'\\u9876\\u80f6'",
+   "body": "u'\\u9876\\u80f6_\\u6cd5\\u5170\\u5c42'",
+   "gid": 2295,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u9876\\u80f6'",
+   "body": "u'\\u9876\\u80f6_\\u6a61\\u80f6\\u5c42'",
+   "gid": 2354,
+   "suppressed": true
+  },
+  {
+   "part": "u'\\u9876\\u80f6'",
+   "body": "u'\\u9876\\u80f6_\\u5185\\u5c42'",
+   "gid": 2363,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u5bfc\\u5411\\u5757'",
+   "body": "u'\\u5bfc\\u5411\\u5757'",
+   "gid": 2380,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u63a8\\u529b\\u6eda\\u9488\\u8f74\\u627f'",
+   "body": "needle rollers thrust bearing_skf(SKF - AXK 4060 - 32,SI,AC,32)",
+   "gid": 2393,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u4e0a\\u5f39\\u7c27\\u5ea7'",
+   "body": "u'\\u4e0a\\u5f39\\u7c27\\u5ea7'",
+   "gid": 2426,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u6d3b\\u585e'",
+   "body": "u'\\u6d3b\\u585e'",
+   "gid": 2498,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u7f13\\u51b2\\u5757'",
+   "body": "u'\\u7f13\\u51b2\\u5757'",
+   "gid": 2529,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u51cf\\u632f\\u5668\\u58f3'",
+   "body": "u'\\u51cf\\u632f\\u5668\\u58f3_\\u8033\\u677f'",
+   "gid": 2538,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u51cf\\u632f\\u5668\\u58f3'",
+   "body": "u'\\u51cf\\u632f\\u5668\\u58f3_\\u4e0b\\u5f39\\u7c27\\u5ea7'",
+   "gid": 2635,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u51cf\\u632f\\u5668\\u58f3'",
+   "body": "u'\\u51cf\\u632f\\u5668\\u58f3_\\u7b52\\u8eab'",
+   "gid": 2675,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u886c\\u5957'",
+   "body": "u'\\u886c\\u5957_\\u5916\\u5c42\\u91d1\\u5c5e1'",
+   "gid": 2692,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u886c\\u5957'",
+   "body": "u'\\u886c\\u5957_\\u5916\\u5c42\\u91d1\\u5c5e2'",
+   "gid": 2701,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u886c\\u5957'",
+   "body": "u'\\u886c\\u5957_\\u6a61\\u80f6\\u5c421'",
+   "gid": 2710,
+   "suppressed": true
+  },
+  {
+   "part": "u'\\u886c\\u5957'",
+   "body": "u'\\u886c\\u5957_\\u6a61\\u80f6\\u5c422'",
+   "gid": 2719,
+   "suppressed": true
+  },
+  {
+   "part": "u'\\u886c\\u5957'",
+   "body": "u'\\u886c\\u5957_\\u5185\\u5c42\\u91d1\\u5c5e1'",
+   "gid": 2728,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u886c\\u5957'",
+   "body": "u'\\u886c\\u5957_\\u5185\\u5c42\\u91d1\\u5c5e2'",
+   "gid": 2737,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u7403\\u5934\\u603b\\u6210'",
+   "body": "u'\\u7403\\u5934\\u603b\\u6210_\\u7403\\u58f3_\\u4e0b\\u6446\\u81c2'",
+   "gid": 2746,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u7403\\u5934\\u603b\\u6210'",
+   "body": "u'\\u7403\\u5934\\u603b\\u6210_\\u7403\\u58f3_\\u6a2a\\u62c9\\u6746'",
+   "gid": 2885,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u7403\\u5934\\u603b\\u6210'",
+   "body": "u'\\u7403\\u5934\\u603b\\u6210_\\u4e0a\\u7403\\u5ea7_\\u4e0b\\u6446\\u81c2'",
+   "gid": 3024,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u7403\\u5934\\u603b\\u6210'",
+   "body": "u'\\u7403\\u5934\\u603b\\u6210_\\u4e0a\\u7403\\u5ea7_\\u6a2a\\u62c9\\u6746'",
+   "gid": 3039,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u7403\\u5934\\u603b\\u6210'",
+   "body": "u'\\u7403\\u5934\\u603b\\u6210_\\u4e0b\\u7403\\u5ea7_\\u4e0b\\u6446\\u81c2'",
+   "gid": 3054,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u7403\\u5934\\u603b\\u6210'",
+   "body": "u'\\u7403\\u5934\\u603b\\u6210_\\u4e0b\\u7403\\u5ea7_\\u6a2a\\u62c9\\u6746'",
+   "gid": 3066,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u7403\\u5934'",
+   "body": "u'\\u7403\\u5934_\\u4e0b\\u6446\\u81c2'",
+   "gid": 3078,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u7403\\u5934'",
+   "body": "u'\\u7403\\u5934_\\u6a2a\\u62c9\\u6746'",
+   "gid": 3234,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u4e0b\\u6446\\u81c2'",
+   "body": "u'\\u4e0b\\u6446\\u81c2_\\u7403\\u5934\\u5ea7'",
+   "gid": 3390,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u4e0b\\u6446\\u81c2'",
+   "body": "u'\\u4e0b\\u6446\\u81c2_\\u672c\\u4f53\\u5185\\u5c42'",
+   "gid": 3399,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u4e0b\\u6446\\u81c2'",
+   "body": "u'\\u4e0b\\u6446\\u81c2_\\u672c\\u4f53\\u5916\\u5c42'",
+   "gid": 3494,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u4e0b\\u6446\\u81c2'",
+   "body": "u'\\u4e0b\\u6446\\u81c2_\\u5185\\u886c\\u7ba11'",
+   "gid": 3813,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u4e0b\\u6446\\u81c2'",
+   "body": "u'\\u4e0b\\u6446\\u81c2_\\u5185\\u886c\\u7ba12'",
+   "gid": 3822,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u8f6c\\u5411\\u6a2a\\u62c9\\u6746'",
+   "body": "u'\\u8f6c\\u5411\\u6a2a\\u62c9\\u6746_\\u672c\\u4f53'",
+   "gid": 3831,
+   "suppressed": false
+  },
+  {
+   "part": "u'\\u8f6c\\u5411\\u6a2a\\u62c9\\u6746'",
+   "body": "u'\\u8f6c\\u5411\\u6a2a\\u62c9\\u6746_\\u7403\\u5934\\u5ea7'",
+   "gid": 3845,
+   "suppressed": false
+  }
+ ],
+ "connections": [
+  {
+   "group": "u'\\u5bf9\\u5730\\u8fde\\u63a5'",
+   "joints": [
+    {
+     "name": "u'\\u9876\\u80f6-\\u5730\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToGround",
+     "suppressed": true,
+     "mobile_new_ids": [
+      2334
+     ],
+     "mobile_notes": "2334:SAME",
+     "reference_new_ids": [],
+     "reference_notes": ""
+    },
+    {
+     "name": "u'\\u6a2a\\u62c9\\u6746-\\u5730\\uff08\\u7403\\u94f0\\uff09'",
+     "type": "Spherical",
+     "conn_type": "BodyToGround",
+     "suppressed": false,
+     "mobile_new_ids": [
+      3839
+     ],
+     "mobile_notes": "3839:SAME",
+     "reference_new_ids": [],
+     "reference_notes": ""
+    },
+    {
+     "name": "u'\\u886c\\u5957-\\u57302\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToGround",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2744
+     ],
+     "mobile_notes": "2744:SAME",
+     "reference_new_ids": [],
+     "reference_notes": ""
+    },
+    {
+     "name": "u'\\u886c\\u5957-\\u57301\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToGround",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2735
+     ],
+     "mobile_notes": "2735:SAME",
+     "reference_new_ids": [],
+     "reference_notes": ""
+    },
+    {
+     "name": "u'\\u5e73\\u79fb\\u7684 - \\u63a5\\u5730 \\u4f4d\\u4e8e \\u65e0\\u9009\\u62e9'",
+     "type": "Translational",
+     "conn_type": "BodyToGround",
+     "suppressed": false,
+     "mobile_new_ids": [
+      1744
+     ],
+     "mobile_notes": "1744:SAME",
+     "reference_new_ids": [],
+     "reference_notes": ""
+    }
+   ]
+  },
+  {
+   "group": "u'\\u87ba\\u6813\\u8fde\\u63a5'",
+   "joints": [
+    {
+     "name": "u'\\u6d3b\\u585e-\\u9876\\u80f6\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2523
+     ],
+     "mobile_notes": "2523:SAME",
+     "reference_new_ids": [
+      2334,
+      2335
+     ],
+     "reference_notes": "2334:SAME; 2335:SAME"
+    },
+    {
+     "name": "u'\\u8033\\u677f-\\u8f6c\\u5411\\u8282\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2615,
+      2617,
+      2625,
+      2626,
+      2627,
+      2628
+     ],
+     "mobile_notes": "2628:SAME; 2627:SAME; 2625:SAME; 2626:SAME; 2615:SAME; 2617:SAME",
+     "reference_new_ids": [
+      1686,
+      1688,
+      1690,
+      1820
+     ],
+     "reference_notes": "1690:SAME; 1688:SAME; 1686:SAME; 1820:SAME"
+    },
+    {
+     "name": "u'\\u7403\\u5934\\uff08\\u4e0b\\u6446\\u81c2\\uff09-\\u8f6c\\u5411\\u8282\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      3197
+     ],
+     "mobile_notes": "3197:SAME",
+     "reference_new_ids": [
+      1715,
+      1717,
+      1719
+     ],
+     "reference_notes": "1719:SAME; 1715:SAME; 1717:SAME"
+    },
+    {
+     "name": "u'\\u7403\\u5934\\uff08\\u6a2a\\u62c9\\u6746\\uff09-\\u8f6c\\u5411\\u8282\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      3364
+     ],
+     "mobile_notes": "3364:SAME",
+     "reference_new_ids": [
+      1445,
+      1742,
+      1744
+     ],
+     "reference_notes": "1445:SAME; 1742:SAME; 1744:SAME"
+    }
+   ]
+  },
+  {
+   "group": "u'\\u710a\\u63a5'",
+   "joints": [
+    {
+     "name": "u'\\u4e0b\\u5f39\\u7c27\\u5ea7-\\u7b52\\u8eab\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2658
+     ],
+     "mobile_notes": "2658:SAME",
+     "reference_new_ids": [
+      2690
+     ],
+     "reference_notes": "2690:SAME"
+    },
+    {
+     "name": "u'\\u8033\\u677f-\\u7b52\\u8eab\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2611
+     ],
+     "mobile_notes": "2611:SAME",
+     "reference_new_ids": [
+      2689
+     ],
+     "reference_notes": "2689:SAME"
+    },
+    {
+     "name": "u'\\u7403\\u5934\\u5ea7-\\u4e0b\\u6446\\u81c2\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      3397
+     ],
+     "mobile_notes": "3397:SAME",
+     "reference_new_ids": [
+      3769
+     ],
+     "reference_notes": "3769:SAME"
+    },
+    {
+     "name": "u'\\u5185\\u886c\\u7ba12-\\u4e0b\\u6446\\u81c2\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      3829
+     ],
+     "mobile_notes": "3829:SAME",
+     "reference_new_ids": [
+      3638
+     ],
+     "reference_notes": "3638:SAME"
+    },
+    {
+     "name": "u'\\u5185\\u886c\\u7ba11-\\u4e0b\\u6446\\u81c2\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      3819
+     ],
+     "mobile_notes": "3819:SAME",
+     "reference_new_ids": [
+      3778
+     ],
+     "reference_notes": "3778:SAME"
+    },
+    {
+     "name": "u'\\u6446\\u81c2\\u5185\\u5c42-\\u5916\\u5c42\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      3436,
+      3474,
+      3484,
+      3485
+     ],
+     "mobile_notes": "3474:SAME; 3484:SAME; 3485:SAME; 3436:SAME",
+     "reference_new_ids": [
+      3614,
+      3637,
+      3749,
+      3750,
+      3753,
+      3754,
+      3772,
+      3774,
+      3777,
+      3779,
+      3787
+     ],
+     "reference_notes": "3749:SAME; 3753:SAME; 3787:SAME; 3779:SAME; 3750:SAME; 3774:SAME; 3772:SAME; 3614:SAME; 3777:SAME; 3754:SAME; 3637:SAME"
+    },
+    {
+     "name": "u'\\u7403\\u5934\\u5ea7-\\u6a2a\\u62c9\\u6746\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      3853
+     ],
+     "mobile_notes": "3853:SAME",
+     "reference_new_ids": [
+      3838
+     ],
+     "reference_notes": "3838:SAME"
+    }
+   ]
+  },
+  {
+   "group": "u'\\u538b\\u63a5'",
+   "joints": [
+    {
+     "name": "u'\\u7f13\\u51b2\\u5757-\\u5f39\\u7c27\\u5ea7\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2534,
+      2537
+     ],
+     "mobile_notes": "2537:SAME; 2534:SAME",
+     "reference_new_ids": [
+      2474,
+      2476
+     ],
+     "reference_notes": "2476:SAME; 2474:SAME"
+    },
+    {
+     "name": "u'\\u5bfc\\u5411\\u5757-\\u7b52\\u8eab\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2387,
+      2389
+     ],
+     "mobile_notes": "2389:SAME; 2387:SAME",
+     "reference_new_ids": [
+      2684,
+      2688
+     ],
+     "reference_notes": "2688:SAME; 2684:SAME"
+    },
+    {
+     "name": "u'\\u7403\\u58f3-\\u7403\\u5934\\u5ea7\\uff08\\u4e0b\\u6446\\u81c2\\uff09\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2828,
+      2829
+     ],
+     "mobile_notes": "2828:SAME; 2834:REMAP",
+     "reference_new_ids": [
+      3396,
+      3398
+     ],
+     "reference_notes": "3398:SAME; 3396:SAME"
+    },
+    {
+     "name": "u'\\u4e0b\\u7403\\u5ea7-\\u7403\\u58f3\\uff08\\u4e0b\\u6446\\u81c2\\uff09\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      3061,
+      3062,
+      3063,
+      3064
+     ],
+     "mobile_notes": "3064:SAME; 3061:SAME; 3062:SAME; 3063:SAME",
+     "reference_new_ids": [
+      2832,
+      2833,
+      2835,
+      2836
+     ],
+     "reference_notes": "2829:REMAP; 2838:REMAP; 2839:REMAP; 2882:REMAP"
+    },
+    {
+     "name": "u'\\u4e0a\\u7403\\u5ea7-\\u7403\\u58f3\\uff08\\u4e0b\\u6446\\u81c2\\uff09\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      3036,
+      3037
+     ],
+     "mobile_notes": "3036:SAME; 3037:SAME",
+     "reference_new_ids": [
+      2836,
+      2837,
+      2838
+     ],
+     "reference_notes": "2838:REMAP; 2837:SAME; 2836:REMAP"
+    },
+    {
+     "name": "u'\\u7403\\u58f3-\\u7403\\u5934\\u5ea7\\uff08\\u6a2a\\u62c9\\u6746\\uff09\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2967,
+      2968
+     ],
+     "mobile_notes": "2967:SAME; 2973:REMAP",
+     "reference_new_ids": [
+      3850,
+      3852
+     ],
+     "reference_notes": "3852:SAME; 3850:SAME"
+    },
+    {
+     "name": "u'\\u4e0b\\u7403\\u5ea7-\\u7403\\u58f3\\uff08\\u6a2a\\u62c9\\u6746\\uff09\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      3073,
+      3074,
+      3075,
+      3076
+     ],
+     "mobile_notes": "3076:SAME; 3073:SAME; 3074:SAME; 3075:SAME",
+     "reference_new_ids": [
+      2971,
+      2972,
+      2974,
+      2975
+     ],
+     "reference_notes": "2977:REMAP; 2968:REMAP; 2978:REMAP; 3021:REMAP"
+    },
+    {
+     "name": "u'\\u4e0a\\u7403\\u5ea7-\\u7403\\u58f3\\uff08\\u6a2a\\u62c9\\u6746\\uff09\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      3051,
+      3052
+     ],
+     "mobile_notes": "3051:SAME; 3052:SAME",
+     "reference_new_ids": [
+      2975,
+      2976,
+      2977
+     ],
+     "reference_notes": "2977:REMAP; 2976:SAME; 2975:REMAP"
+    },
+    {
+     "name": "u'\\u886c\\u59572-\\u886c\\u7ba12\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2706
+     ],
+     "mobile_notes": "2706:SAME",
+     "reference_new_ids": [
+      3827
+     ],
+     "reference_notes": "3827:SAME"
+    },
+    {
+     "name": "u'\\u886c\\u59571-\\u886c\\u7ba11\\uff08\\u56fa\\u5b9a\\uff09'",
+     "type": "Fixed",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2697
+     ],
+     "mobile_notes": "2697:SAME",
+     "reference_new_ids": [
+      3820
+     ],
+     "reference_notes": "3820:SAME"
+    },
+    {
+     "name": "u'\\u886c\\u59572_\\u5185\\u5957-\\u5916\\u5957\\uff08\\u886c\\u5957\\uff09'",
+     "type": "Bushing",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2742,
+      2743,
+      2744
+     ],
+     "mobile_notes": "2745:REMAP; 2742:SAME; 2743:SAME",
+     "reference_new_ids": [
+      2707,
+      2708,
+      2709
+     ],
+     "reference_notes": "2708:SAME; 2707:SAME; 2709:SAME"
+    },
+    {
+     "name": "u'\\u886c\\u59571_\\u5185\\u5957-\\u5916\\u5957\\uff08\\u886c\\u5957\\uff09'",
+     "type": "Bushing",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2733,
+      2734,
+      2736
+     ],
+     "mobile_notes": "2736:SAME; 2734:SAME; 2733:SAME",
+     "reference_new_ids": [
+      2698,
+      2699,
+      2700
+     ],
+     "reference_notes": "2699:SAME; 2700:SAME; 2698:SAME"
+    },
+    {
+     "name": "u'\\u9876\\u80f6_\\u5185\\u5c42-\\u6cd5\\u5170\\u5c42\\uff08\\u886c\\u5957\\uff09'",
+     "type": "Bushing",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2375,
+      2376
+     ],
+     "mobile_notes": "2376:SAME; 2375:SAME",
+     "reference_new_ids": [
+      2330,
+      2331
+     ],
+     "reference_notes": "2330:SAME; 2331:SAME"
+    }
+   ]
+  },
+  {
+   "group": "u'\\u94f0\\u63a5'",
+   "joints": [
+    {
+     "name": "u'\\u7403\\u9500\\uff08\\u4e0b\\u6446\\u81c2\\uff09-\\u4e0b\\u7403\\u5ea7\\uff08\\u7403\\u94f0\\uff09'",
+     "type": "Spherical",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      3207
+     ],
+     "mobile_notes": "3207:SAME",
+     "reference_new_ids": [
+      3060
+     ],
+     "reference_notes": "3060:SAME"
+    },
+    {
+     "name": "u'\\u7403\\u9500\\uff08\\u6a2a\\u62c9\\u6746\\uff09-\\u4e0b\\u7403\\u5ea7\\uff08\\u7403\\u94f0\\uff09'",
+     "type": "Spherical",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      3363
+     ],
+     "mobile_notes": "3363:SAME",
+     "reference_new_ids": [
+      3072
+     ],
+     "reference_notes": "3072:SAME"
+    }
+   ]
+  },
+  {
+   "group": "u'\\u8fd0\\u52a8\\u7ea6\\u675f'",
+   "joints": [
+    {
+     "name": "u'\\u5f39\\u7c27-\\u7b52\\u8eab\\uff08\\u5706\\u67f1\\uff09'",
+     "type": "Cylindrical",
+     "conn_type": "BodyToBody",
+     "suppressed": true,
+     "mobile_new_ids": [],
+     "mobile_notes": "",
+     "reference_new_ids": [
+      2690
+     ],
+     "reference_notes": "2690:SAME"
+    },
+    {
+     "name": "u'\\u6d3b\\u585e-\\u7b52\\u8eab\\uff08\\u5e73\\u79fb\\uff09'",
+     "type": "Translational",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2526
+     ],
+     "mobile_notes": "2526:SAME",
+     "reference_new_ids": [
+      2684
+     ],
+     "reference_notes": "2684:SAME"
+    },
+    {
+     "name": "u'\\u6d3b\\u585e-\\u5bfc\\u5411\\u5757\\uff08\\u5e73\\u79fb\\uff09'",
+     "type": "Translational",
+     "conn_type": "BodyToBody",
+     "suppressed": true,
+     "mobile_new_ids": [
+      2526
+     ],
+     "mobile_notes": "2526:SAME",
+     "reference_new_ids": [
+      2392
+     ],
+     "reference_notes": "2392:SAME"
+    },
+    {
+     "name": "u'\\u6d3b\\u585e-\\u7f13\\u51b2\\u5757\\uff08\\u5e73\\u79fb\\uff09'",
+     "type": "Translational",
+     "conn_type": "BodyToBody",
+     "suppressed": true,
+     "mobile_new_ids": [
+      2526
+     ],
+     "mobile_notes": "2526:SAME",
+     "reference_new_ids": [
+      2536
+     ],
+     "reference_notes": "2536:SAME"
+    },
+    {
+     "name": "u'\\u8f74\\u627f-\\u5f39\\u7c27\\u5ea7\\uff08\\u8f6c\\u52a8\\uff09'",
+     "type": "Revolute",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2403
+     ],
+     "mobile_notes": "2403:SAME",
+     "reference_new_ids": [
+      2488
+     ],
+     "reference_notes": "2488:SAME"
+    },
+    {
+     "name": "u'\\u8f74\\u627f-\\u9876\\u80f6\\uff08\\u8f6c\\u52a8\\uff09'",
+     "type": "Revolute",
+     "conn_type": "BodyToBody",
+     "suppressed": false,
+     "mobile_new_ids": [
+      2403
+     ],
+     "mobile_notes": "2403:SAME",
+     "reference_new_ids": [
+      2372
+     ],
+     "reference_notes": "2372:SAME"
+    }
+   ]
+  },
+  {
+   "group": "u'\\u5f39\\u7c27\\u529b\\u5143\\u7d20'",
+   "joints": [
+    {
+     "name": "u'\\u5f39\\u7c27\\u529b\\u5143\\u7d20'",
+     "type": "ERR AttributeError(\"'Spring' object has no attribute 'Type'\",)",
+     "conn_type": null,
+     "suppressed": false,
+     "mobile_new_ids": [],
+     "mobile_notes": "",
+     "reference_new_ids": [],
+     "reference_notes": ""
+    }
+   ]
+  }
+ ],
+ "other": {
+  "named_selections": [
+   {
+    "name": "u'\\u9876\\u80f6\\u87ba\\u6813\\u5b54\\u5185\\u5706\\u67f1\\u9762'",
+    "ids": [
+     2347,
+     2349,
+     2350
+    ]
+   },
+   {
+    "name": "u'\\u886c\\u5957\\u94f0\\u63a5\\u5185\\u5706\\u67f1\\u9762'",
+    "ids": [
+     2735,
+     2744
+    ]
+   },
+   {
+    "name": "u'\\u6a2a\\u62c9\\u6746\\u5916\\u7aef\\u7403\\u5934\\u9762'",
+    "ids": [
+     3839
+    ]
+   },
+   {
+    "name": "u'\\u9009\\u62e9'",
+    "ids": [
+     3787,
+     3753,
+     3749,
+     3615,
+     3769,
+     3779,
+     3772,
+     3614,
+     3777,
+     3637,
+     3754,
+     3640,
+     3662,
+     3783,
+     3766,
+     3757,
+     3748,
+     3774,
+     3750,
+     3638,
+     3781,
+     3778,
+     3626
+    ]
+   }
+  ],
+  "remote_points": [
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004A9 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 5'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004AA [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 6'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004AB [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 15'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004AC [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 16'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004AD [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004AE [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 2'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004AF [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 3'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004B0 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 4'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004B1 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 7'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004B2 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 8'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004B3 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 9'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004B4 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 10'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004B5 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 11'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004B6 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 12'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004B7 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 17'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004B8 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 18'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004B9 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 19'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004BA [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 20'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004BB [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 21'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004BC [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 22'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004BD [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 23'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004BE [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 24'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004BF [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 25'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004C0 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 26'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004C1 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 27'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004C2 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 28'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004C3 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 33'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004C4 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 34'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004C5 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 35'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004C6 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 36'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004C7 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 37'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004C8 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 38'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004C9 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 39'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004CA [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 40'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004CB [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 41'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004CC [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 42'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004CD [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 43'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004CE [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 44'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004CF [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 45'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004D0 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 46'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004D1 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 47'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004D2 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 48'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004D3 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 49'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004D4 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 50'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004D5 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 51'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004D6 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 52'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004D7 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 61'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004D8 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 62'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004D9 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 63'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004DA [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 64'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004DB [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 65'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004DC [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 66'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004DD [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 67'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004DE [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 68'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004DF [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 69'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004E0 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 70'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004E1 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 71'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004E2 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 72'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004E3 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 73'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004E4 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 74'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004E5 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 75'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004E6 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 76'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004E7 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 29'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004E8 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 30'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004E9 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 31'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004EA [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 32'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004EB [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 53'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004EC [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 54'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004ED [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "1206.625923006527 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 55'",
+    "XCoordinate": "-100.90149002198409 [mm]",
+    "YCoordinate": "-351.94196664166 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004EE [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "1248.7325031888204 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 56'",
+    "XCoordinate": "-111.05315811448597 [mm]",
+    "YCoordinate": "-534.84233495805631 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004EF [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 58'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004F0 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 59'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004F1 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 13'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004F2 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 14'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004F3 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u8fdc\\u7a0b\\u70b9'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Deformable",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004F4 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "-70 [mm]",
+    "name": "u'\\u8fdc\\u7a0b\\u70b9 2'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Rigid",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004F5 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 57'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   },
+   {
+    "Behavior": "Deformable",
+    "Location": "<Ansys.ACT.Mechanical.MechanicalSelectionInfo object at 0x00000000000004F6 [Ansys.ACT.Mechanical.MechanicalSelectionInfo]>",
+    "PinballRegion": "0 [mm]",
+    "ZCoordinate": "0 [mm]",
+    "name": "u'\\u5185\\u90e8\\u8fdc\\u7a0b\\u70b9 60'",
+    "XCoordinate": "0 [mm]",
+    "YCoordinate": "0 [mm]"
+   }
+  ],
+  "analyses": [
+   {
+    "name": "Motion",
+    "type": "Analysis",
+    "children": [
+     [
+      "InitialConditions",
+      "u'\\u521d\\u59cb\\u6761\\u4ef6'"
+     ],
+     [
+      "DataModelObject",
+      "u'\\u5206\\u6790\\u8bbe\\u7f6e'"
+     ],
+     [
+      "EarthGravity",
+      "u'\\u6807\\u51c6\\u5730\\u7403\\u91cd\\u529b'"
+     ],
+     [
+      "DataModelObject",
+      "Spline"
+     ],
+     [
+      "DataModelObject",
+      "Joint Force"
+     ],
+     [
+      "DataModelObject",
+      "User Subroutine"
+     ],
+     [
+      "DataModelObject",
+      "Joint Load Properties"
+     ],
+     [
+      "DataModelObject",
+      "Function Expression"
+     ],
+     [
+      "Solution",
+      "u'\\u6c42\\u89e3'"
+     ]
+    ]
+   }
+  ],
+  "materials": [
+   "Structural Steel",
+   "u'10\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'",
+   "u'20\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'",
+   "u'45\\u53f7\\u4f18\\u8d28\\u78b3\\u7d20\\u7ed3\\u6784\\u94a2'",
+   "u'40Cr\\u5408\\u91d1\\u7ed3\\u6784\\u94a2'",
+   "u'Q345B\\u4f4e\\u5408\\u91d1\\u9ad8\\u5f3a\\u5ea6\\u7ed3\\u6784\\u94a2'",
+   "u'QStE420\\u70ed\\u673a\\u68b0\\u8f67\\u5236\\u9ad8\\u5f3a\\u94a2'",
+   "u'60Si2MnA\\u5f39\\u7c27\\u94a2'",
+   "u'\\u7403\\u58a8\\u94f8\\u94c1\\uff08QT450-10\\uff09'",
+   "u'\\u805a\\u7532\\u919b\\uff08POM\\uff09'",
+   "u'25%\\u73bb\\u7ea4\\u589e\\u5f3a\\u805a\\u7532\\u919b\\uff08POM-GF25\\uff09'",
+   "u'\\u5929\\u7136\\u6a61\\u80f6\\uff08NR60\\uff09'",
+   "u'\\u5fae\\u5b54\\u805a\\u6c28\\u916f\\uff08PU\\uff09'"
+  ]
+ }
+}
